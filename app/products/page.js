@@ -58,8 +58,8 @@ export default function ProductsPage() {
             <h1 className="display-title">Templates and custom websites.</h1>
             <p className="body-large mt-7 max-w-2xl">Buy a Figma or Node.js template, or request a custom website.</p>
           </div>
-          <div className="flex items-center gap-3 border border-[#d4c7bf] bg-[#fffdf9] px-4 py-3 text-xs text-[#675c59]">
-            <StripeLogo className="h-7 w-auto rounded-sm" /> Stripe checkout is not live yet
+          <div className="flex items-center border border-[#d4c7bf] bg-[#fffdf9] px-4 py-3" aria-label="Stripe">
+            <StripeLogo className="h-7 w-auto rounded-sm" />
           </div>
         </div>
       </section>

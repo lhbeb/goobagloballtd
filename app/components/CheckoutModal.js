@@ -28,7 +28,7 @@ export default function CheckoutModal({ product, license, price, onClose }) {
 
                 <div className="border-b border-[#e6ddd8] bg-[#f8f5f0] p-7 sm:p-8">
                     <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-primary">Purchase information</p>
-                    <h2 className="mt-3 pr-10 text-3xl">Online checkout is not active yet.</h2>
+                    <h2 className="mt-3 pr-10 text-3xl">Purchase this item</h2>
                     <p className="mt-3 text-sm leading-6 text-[#6f6461]">Contact us to purchase this item. Do not enter or send card details by email.</p>
                 </div>
 
@@ -44,9 +44,8 @@ export default function CheckoutModal({ product, license, price, onClose }) {
                         </div>
                     </div>
 
-                    <div className="mt-5 flex items-center gap-3 rounded-md border border-[#ded5cf] bg-[#efe8df] px-4 py-3">
+                    <div className="mt-5 flex items-center justify-center rounded-md border border-[#ded5cf] bg-[#efe8df] px-4 py-3" aria-label="Stripe">
                         <StripeLogo className="h-7 w-auto rounded-sm" />
-                        <p className="text-xs leading-5 text-[#665b58]">Stripe integration is pending. No payment will be taken on this website yet.</p>
                     </div>
 
                     <a

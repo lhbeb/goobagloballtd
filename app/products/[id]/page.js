@@ -300,10 +300,9 @@ export default function ProductDetailPage({ params }) {
                                 >
                                     How to purchase — ${selectedLicense === 'standard' ? product.standardPrice : product.extendedPrice}
                                 </button>
-                                <p className="mt-3 flex items-center justify-center gap-2 text-center text-xs text-gray-500 leading-relaxed">
+                                <div className="mt-3 flex items-center justify-center" aria-label="Stripe">
                                     <StripeLogo className="h-7 w-auto rounded border border-gray-100" />
-                                    <span>Online payment is not active yet. Stripe integration is pending.</span>
-                                </p>
+                                </div>
                             </div>
 
                             {/* Product Description */}
