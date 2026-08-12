@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://goobagloballtd.com";
+  const baseUrl = "https://goobaglobaltd.com";
   const routes = [
     "",
     "/about",

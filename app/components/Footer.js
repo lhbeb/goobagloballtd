@@ -18,7 +18,7 @@ export default function Footer() {
               <Image src="/logo.png" alt="Gooba Global LTD logo" width={535} height={204} className="h-14 w-auto" />
             </div>
             <p className="mt-6 max-w-md text-sm leading-7">
-              Digital products and web design for ambitious businesses. Gooba Global LTD is managed by RIFTEDCARS LLC and led by CEO Aya Yakoulti.
+              Gooba Global LTD sells digital products and provides custom website design and development. The store is operated by RIFTEDCARS LLC. Aya Yakoulti is CEO of RIFTEDCARS LLC.
             </p>
           </div>
 
@@ -34,16 +34,17 @@ export default function Footer() {
           <div>
             <p className="mb-5 text-[11px] font-bold uppercase tracking-[0.2em] text-[#c9a86a]">Contact</p>
             <div className="space-y-3 text-sm leading-6">
+              <p className="font-bold text-[#fffdf9]">RIFTEDCARS LLC</p>
+              <p>30 North Gould Street<br />Sheridan, WY 82801<br />United States of America</p>
               <a href="mailto:aya.yakoulti1999@gmail.com" className="block break-all transition hover:text-white">aya.yakoulti1999@gmail.com</a>
               <a href="tel:+12512834593" className="block transition hover:text-white">+1 251-283-4593</a>
-              <p>30 North Gould Street<br />Sheridan, WY 82801<br />United States</p>
             </div>
           </div>
         </div>
 
         <div className="flex flex-col gap-3 pt-7 text-xs leading-5 text-[#988984] sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Gooba Global LTD. All rights reserved.</p>
-          <p>Store management: RIFTEDCARS LLC · goobagloballtd.com</p>
+          <p>© 2026 Gooba Global LTD ( RIFTEDCARS LLC ) . All rights reserved.</p>
+          <a href="https://goobaglobaltd.com/" className="transition hover:text-white">goobaglobaltd.com</a>
         </div>
       </div>
     </footer>

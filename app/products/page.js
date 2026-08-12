@@ -4,7 +4,7 @@ import StripeLogo from '../components/StripeLogo';
 
 export const metadata = {
   title: 'Digital Products',
-  description: 'Browse templates, UI kits, and custom digital solutions from Gooba Global LTD.',
+  description: 'Figma templates, a Node.js website template, and custom website services from GOOBA GLOBAL LTD.',
 };
 
 const products = [
@@ -14,7 +14,7 @@ const products = [
     category: 'Figma UI Kit',
     price: 18,
     image: '/lisitings/Logix/photo1.png',
-    description: 'A polished interface system for logistics businesses that need a credible, modern online presence.',
+    description: 'Five-page Figma UI kit for logistics websites, with desktop and mobile layouts.',
     tags: ['Figma', 'Responsive', '12 screens'],
   },
   {
@@ -23,7 +23,7 @@ const products = [
     category: 'Website Template',
     price: 18,
     image: '/lisitings/Ronel - NodeJs Landing Page Template/photo1.png',
-    description: 'A responsive startup landing page designed to help teams publish a clear launch experience quickly.',
+    description: 'Node.js and Bootstrap 5.3 template with 10+ homepage layouts and authentication pages.',
     tags: ['NodeJS', 'Bootstrap', 'Responsive'],
   },
   {
@@ -34,7 +34,7 @@ const products = [
     fixedPrice: true,
     creator: 'GOOBA GLOBAL LTD',
     image: '/lisitings/WebConstruct/371b406ee08a100ebb1e790373df1135edadca3aaf14b0fe770d84626cd6c200.webp',
-    description: 'An elegant one-page website template for construction, engineering, and architectural firms.',
+    description: 'One-page Figma template for construction, engineering, and architecture firms.',
     tags: ['Figma', '1280px Grid', 'One Page'],
   },
   {
@@ -43,7 +43,7 @@ const products = [
     category: 'Bespoke Service',
     price: 800,
     image: '/lisitings/Website Design and Development, Custom websites, Business websites, Custom Websites For Business/photo1-thumbnail.webp',
-    description: 'A tailored website designed and developed around your business, audience, content, and growth goals.',
+    description: 'Custom landing pages and multi-page business websites, built to your requirements.',
     tags: ['Custom', 'Strategy', 'Development'],
   },
 ];
@@ -54,12 +54,12 @@ export default function ProductsPage() {
       <section className="page-hero">
         <div className="site-container grid items-end gap-8 lg:grid-cols-[1fr_auto]">
           <div className="max-w-3xl">
-            <p className="eyebrow">Digital shop</p>
-            <h1 className="display-title">Practical products for faster digital work.</h1>
-            <p className="body-large mt-7 max-w-2xl">Templates, interface kits, and custom solutions designed to give businesses a stronger starting point.</p>
+            <p className="eyebrow">Products</p>
+            <h1 className="display-title">Templates and custom websites.</h1>
+            <p className="body-large mt-7 max-w-2xl">Buy a Figma or Node.js template, or request a custom website.</p>
           </div>
           <div className="flex items-center gap-3 border border-[#d4c7bf] bg-[#fffdf9] px-4 py-3 text-xs text-[#675c59]">
-            <StripeLogo className="h-7 w-auto rounded-sm" /> Transactions processed through Stripe
+            <StripeLogo className="h-7 w-auto rounded-sm" /> Stripe checkout is not live yet
           </div>
         </div>
       </section>
@@ -67,8 +67,8 @@ export default function ProductsPage() {
       <section className="py-16 sm:py-24">
         <div className="site-container">
           <div className="mb-10 flex flex-col justify-between gap-3 border-b border-[#cfc4be] pb-5 sm:flex-row sm:items-end">
-            <p className="text-sm font-bold">All products</p>
-            <p className="text-xs text-[#7a6f6b]">Digital products are delivered electronically after purchase.</p>
+            <p className="text-sm font-bold">Products and services</p>
+            <p className="text-xs text-[#7a6f6b]">Open a listing for files, features, licenses, and pricing.</p>
           </div>
 
           <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-4">

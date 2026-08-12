@@ -9,7 +9,7 @@ export async function generateMetadata({ params }) {
   const { id } = await params;
   return {
     title: titles[id] || 'Product Details',
-    description: 'View product details, licensing, pricing, and secure checkout information from Gooba Global LTD.',
+    description: 'Product details, included files, license options, and pricing from GOOBA GLOBAL LTD.',
   };
 }
 

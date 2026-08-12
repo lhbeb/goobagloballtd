@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'About',
-  description: 'Learn about Gooba Global LTD, its leadership, and the company managing the store.',
+  description: 'About GOOBA GLOBAL LTD, the digital store operated by RIFTEDCARS LLC, and CEO Aya Yakoulti.',
 };
 
 const principles = [
-  ['Clarity before decoration', 'Every page should help a visitor understand the offer and make a confident next decision.'],
-  ['Useful collaboration', 'We keep feedback focused, explain tradeoffs, and maintain a visible path from brief to launch.'],
-  ['Care in the details', 'Typography, responsive behavior, content structure, and performance all shape credibility.'],
+  ['Clear scope', 'We define the pages, features, timeline, and price before work begins.'],
+  ['Direct communication', 'You receive clear updates and focused feedback throughout the project.'],
+  ['Tested delivery', 'We review layout, responsiveness, and core functionality before delivery.'],
 ];
 
 export default function AboutPage() {
@@ -18,23 +18,23 @@ export default function AboutPage() {
       <section className="page-hero">
         <div className="site-container grid gap-10 lg:grid-cols-[1fr_.55fr] lg:items-end">
           <div className="max-w-4xl">
-            <p className="eyebrow">About Gooba Global</p>
-            <h1 className="display-title">Small enough to stay focused. Built to work globally.</h1>
+            <p className="eyebrow">About</p>
+            <h1 className="display-title">Websites and digital products built by GOOBA GLOBAL LTD.</h1>
           </div>
-          <p className="body-large">Gooba Global LTD is a digital store and studio creating websites, templates, and interface products for modern businesses.</p>
+          <p className="body-large">We sell ready-made templates and build custom websites and web apps.</p>
         </div>
       </section>
 
       <section className="py-20 sm:py-28">
         <div className="site-container grid gap-14 lg:grid-cols-[.55fr_1fr] lg:gap-24">
           <div>
-            <p className="eyebrow">Our point of view</p>
-            <h2 className="section-title">Good digital work should make the business easier to understand.</h2>
+            <p className="eyebrow">What we do</p>
+            <h2 className="section-title">Design and development for websites, web apps, and digital products.</h2>
           </div>
           <div className="space-y-7 text-base leading-8 text-[#665b58] sm:text-lg">
-            <p>We started from a practical belief: a website should do more than look current. It should establish trust, explain the offer, and make the next step obvious.</p>
-            <p>That approach shapes both our custom website work and the digital products sold through our store. We value structured content, confident visual systems, responsive execution, and honest communication.</p>
-            <p>The GOOBA GLOBAL LTD store is managed by <strong className="text-[#302727]">RIFTEDCARS LLC</strong> from Sheridan, Wyoming, United States.</p>
+            <p>GOOBA GLOBAL LTD sells downloadable templates and provides custom design and development services.</p>
+            <p>Our work includes UI/UX design, front-end development, full-stack development, and security-focused implementation.</p>
+            <p>GOOBA GLOBAL LTD is operated by <strong className="text-[#302727]">RIFTEDCARS LLC</strong> in Sheridan, Wyoming.</p>
           </div>
         </div>
       </section>
@@ -47,26 +47,26 @@ export default function AboutPage() {
               <div className="relative aspect-[589/703] overflow-hidden bg-[#9b9189]">
                 <Image
                   src="/ayayakoulti.png"
-                  alt="Aya Yakoulti, CEO of Gooba Global LTD"
+                  alt="Aya Yakoulti, CEO of RIFTEDCARS LLC"
                   fill
                   sizes="(max-width: 1024px) 90vw, 38vw"
                   className="object-cover"
                 />
               </div>
               <div className="absolute bottom-5 right-0 bg-primary px-5 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-white">
-                Founder-led digital expertise
+                CEO, RIFTEDCARS LLC
               </div>
             </div>
 
             <div>
-              <p className="eyebrow">Meet the CEO</p>
+              <p className="eyebrow">Leadership</p>
               <h2 className="text-5xl sm:text-6xl lg:text-7xl">Aya Yakoulti</h2>
-              <p className="mt-3 text-xs font-bold uppercase tracking-[0.18em] text-primary">Chief Executive Officer · Digital Builder</p>
+              <p className="mt-3 text-xs font-bold uppercase tracking-[0.18em] text-primary">CEO, RIFTEDCARS LLC</p>
               <p className="body-large mt-7 max-w-2xl">
-                Aya Yakoulti leads Gooba Global LTD and brings together strategy, design, development, and security to build dependable digital experiences. She works across the full product journey—from shaping an intuitive interface to engineering the website or web application behind it.
+                Aya Yakoulti is CEO of RIFTEDCARS LLC, the company that operates GOOBA GLOBAL LTD. She works in web development, UI/UX design, application security, and full-stack web app development.
               </p>
               <p className="mt-5 max-w-2xl text-sm leading-7 text-[#746966] sm:text-base">
-                As a web developer, UI/UX designer, security professional, and full-stack builder, Aya focuses on creating digital products that feel clear to use, professional to present, and thoughtfully constructed from front end to back end.
+                She leads the design and development work behind Gooba Global&apos;s products and client projects.
               </p>
 
               <div className="mt-9 grid border-y border-[#c9bbb3] sm:grid-cols-2 sm:divide-x sm:divide-[#c9bbb3]">
@@ -84,7 +84,7 @@ export default function AboutPage() {
               </div>
 
               <div className="mt-9">
-                <Link href="/contact" className="btn-primary">Start a conversation <span>↗</span></Link>
+                <Link href="/contact" className="btn-primary">Contact us <span>↗</span></Link>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function AboutPage() {
               </article>
             ))}
           </div>
-          <div className="mt-10"><Link href="/contact" className="btn-primary">Work with us <span>↗</span></Link></div>
+          <div className="mt-10"><Link href="/contact" className="btn-primary">Contact us <span>↗</span></Link></div>
         </div>
       </section>
     </div>

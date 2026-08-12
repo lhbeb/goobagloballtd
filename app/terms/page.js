@@ -1,141 +1,68 @@
-import StripeLogo from '../components/StripeLogo';
-
 export const metadata = {
-    title: "Terms of Service",
-    description: "Read our terms of service for web design services.",
+    title: 'Terms of Service',
+    description: 'Terms for digital products and custom website services from GOOBA GLOBAL LTD.',
 };
 
 export default function TermsPage() {
     return (
         <div className="min-h-screen">
-            {/* Hero Section */}
             <section className="page-hero">
-                <div className="site-container">
-                    <div className="max-w-3xl">
-                        <p className="eyebrow">Legal</p>
-                        <h1 className="display-title">Terms of Service</h1>
-                        <p className="mt-6 text-sm text-[#746966]">
-                            Last Updated: August 2026
-                        </p>
-                    </div>
+                <div className="site-container max-w-3xl">
+                    <p className="eyebrow">Legal</p>
+                    <h1 className="display-title">Terms of Service</h1>
+                    <p className="mt-6 text-sm text-[#746966]">Last updated: August 2026</p>
                 </div>
             </section>
 
-            {/* Content Section */}
             <section className="py-16 sm:py-20">
                 <div className="site-container">
-                    <div className="surface-card mx-auto max-w-4xl p-7 sm:p-12">
-                        <div className="prose prose-lg max-w-none">
-                            <p className="text-xl text-gray-700 mb-8">
-                                Welcome to the GOOBA GLOBAL LTD store, managed by RIFTEDCARS LLC. By engaging our web design services, you agree to be bound by these Terms of Service.
-                            </p>
+                    <article className="surface-card mx-auto max-w-4xl p-7 text-gray-700 sm:p-12">
+                        <p className="text-xl leading-8">These terms apply when you buy a digital product or order a custom service from the GOOBA GLOBAL LTD store, operated by RIFTEDCARS LLC.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">1. Services</h2>
-                            <p className="text-gray-700 mb-6">
-                                Gooba Global LTD provides professional web design and development services. The specific services, deliverables, timeline, and pricing will be outlined in a separate project agreement or proposal.
-                            </p>
+                        <h2 className="mt-12 text-3xl">1. Products and services</h2>
+                        <p className="mt-4 leading-7">GOOBA GLOBAL LTD sells downloadable templates and provides website design, web development, web-app, and UI/UX services.</p>
+                        <p className="mt-4 leading-7">The deliverables, timeline, revisions, price, and support period for custom work will be stated in a written project proposal. Changes to the agreed scope may change the price or timeline.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">2. Payment Terms</h2>
-                            <p className="text-gray-700 mb-4">
-                                <strong>2.1 Pricing:</strong> Our website services start from $650 as outlined on our website. Final pricing is determined by the selected package and specific project requirements.
-                            </p>
-                            <p className="text-gray-700 mb-4">
-                                <span className="mb-2 inline-flex items-center gap-2"><StripeLogo className="h-8 w-auto rounded border border-gray-100" /><strong>2.2 Digital Product Payments</strong></span><br />
-                                All transactions for digital products are processed using Stripe as our third-party payment gateway. Stripe&apos;s services and terms may also apply to the payment transaction.
-                            </p>
-                            <p className="text-gray-700 mb-4">
-                                <strong>2.3 Service Payment Schedule:</strong> Unless otherwise agreed, payment terms are as follows:
-                            </p>
-                            <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
-                                <li>50% deposit required to commence work</li>
-                                <li>50% due upon project completion and before final delivery</li>
-                            </ul>
-                            <p className="text-gray-700 mb-6">
-                                <strong>2.4 Late Payments:</strong> Payments not received within 14 days of the due date may result in project suspension and/or late fees.
-                            </p>
+                        <h2 className="mt-12 text-3xl">2. Prices and payment</h2>
+                        <p className="mt-4 leading-7">Prices are shown on the relevant listing or in a written project proposal. Service payment schedules and any required deposit will be stated in that proposal. Work may be paused if an agreed payment is overdue.</p>
+                        <p className="mt-4 leading-7">Online checkout is not active. When Stripe checkout is enabled, Stripe&apos;s terms will also apply to the payment transaction.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">3. Project Timeline</h2>
-                            <p className="text-gray-700 mb-6">
-                                We will provide an estimated timeline for your project. While we strive to meet all deadlines, timelines are estimates and may be affected by factors including client feedback delays, scope changes, or unforeseen technical issues.
-                            </p>
+                        <h2 className="mt-12 text-3xl">3. Digital-product licenses</h2>
+                        <p className="mt-4 leading-7">A downloadable product may be used only under the license shown at purchase. You may not resell, redistribute, share, or repackage the product as a standalone item unless the license expressly allows it. Third-party assets remain subject to their own licenses.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">4. Client Responsibilities</h2>
-                            <p className="text-gray-700 mb-4">
-                                The client agrees to:
-                            </p>
-                            <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
-                                <li>Provide all necessary materials, content, and information in a timely manner</li>
-                                <li>Respond to requests for feedback within a reasonable timeframe</li>
-                                <li>Ensure all provided content is legally owned or licensed for use</li>
-                                <li>Make timely payments as agreed</li>
-                            </ul>
+                        <h2 className="mt-12 text-3xl">4. Client responsibilities</h2>
+                        <ul className="mt-4 list-disc space-y-2 pl-6 leading-7">
+                            <li>Provide required content, access, and feedback on time</li>
+                            <li>Use only content and assets you own or are licensed to use</li>
+                            <li>Review deliverables and report issues within the agreed review period</li>
+                            <li>Pay invoices according to the project proposal</li>
+                        </ul>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">5. Revisions</h2>
-                            <p className="text-gray-700 mb-6">
-                                Each service package includes a specified number of revision rounds. Additional revisions beyond the agreed scope may incur extra charges. Major scope changes will require a new agreement and additional payment.
-                            </p>
+                        <h2 className="mt-12 text-3xl">5. Ownership</h2>
+                        <p className="mt-4 leading-7">Rights to custom work transfer only after full payment and as described in the project agreement. Pre-existing tools, reusable components, templates, and third-party assets are excluded unless the agreement says otherwise.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">6. Intellectual Property</h2>
-                            <p className="text-gray-700 mb-4">
-                                <strong>6.1 Ownership:</strong> Upon receipt of full payment, all custom work created specifically for your project will be transferred to you.
-                            </p>
-                            <p className="text-gray-700 mb-4">
-                                <strong>6.2 Portfolio Rights:</strong> Gooba Global LTD reserves the right to display completed projects in our portfolio and marketing materials unless otherwise agreed in writing.
-                            </p>
-                            <p className="text-gray-700 mb-6">
-                                <strong>6.3 Third-Party Assets:</strong> Any third-party assets (fonts, stock images, plugins) used in your project remain the property of their respective owners and may require separate licensing.
-                            </p>
+                        <h2 className="mt-12 text-3xl">6. Support</h2>
+                        <p className="mt-4 leading-7">Any included support period and what it covers will be stated in the product listing or project proposal. Ongoing maintenance and new features require a separate agreement.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">7. Support and Maintenance</h2>
-                            <p className="text-gray-700 mb-6">
-                                Post-launch support is included for the period specified in your service package (typically 30-60 days). This covers bug fixes and minor adjustments. Ongoing maintenance, updates, and new features can be arranged separately.
-                            </p>
+                        <h2 className="mt-12 text-3xl">7. Cancellations and refunds</h2>
+                        <p className="mt-4 leading-7">Digital-product sales are final after delivery except where required by law or where the product is materially defective. Service cancellations and payment for completed work are governed by the project proposal.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">8. Cancellation and Refunds</h2>
-                            <p className="text-gray-700 mb-6">
-                                If you wish to cancel a project, you must notify us in writing. Deposits are non-refundable. You will be invoiced for all work completed up to the cancellation date.
-                            </p>
+                        <h2 className="mt-12 text-3xl">8. Results and liability</h2>
+                        <p className="mt-4 leading-7">We do not guarantee search rankings, revenue, traffic, or other business results. To the extent permitted by law, GOOBA GLOBAL LTD&apos;s total liability is limited to the amount paid for the affected product or service. We are not liable for indirect or consequential loss.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">9. Warranties and Disclaimers</h2>
-                            <p className="text-gray-700 mb-6">
-                                We warrant that all work will be performed professionally and competently. However, we cannot guarantee specific results, rankings, or business outcomes. Websites are delivered &quot;as is&quot; after the agreed testing phase.
-                            </p>
+                        <h2 className="mt-12 text-3xl">9. Governing law and updates</h2>
+                        <p className="mt-4 leading-7">These terms are governed by Wyoming law. Updated terms apply to future purchases and orders. An active service agreement changes only when both parties agree in writing.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">10. Limitation of Liability</h2>
-                            <p className="text-gray-700 mb-6">
-                                Gooba Global LTD&apos;s liability is limited to the amount paid for the services. We are not liable for indirect, incidental, or consequential damages.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">11. Confidentiality</h2>
-                            <p className="text-gray-700 mb-6">
-                                Both parties agree to keep confidential any proprietary or sensitive information shared during the course of the project.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">12. Governing Law</h2>
-                            <p className="text-gray-700 mb-6">
-                                These terms shall be governed by and construed in accordance with the laws of the State of Wyoming, United States of America. Any disputes will be resolved in the courts of Wyoming.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">13. Changes to Terms</h2>
-                            <p className="text-gray-700 mb-6">
-                                We reserve the right to update these terms at any time. Material changes will be communicated to active clients. Your continued use of our services constitutes acceptance of any changes.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">14. Contact Information</h2>
-                            <p className="text-gray-700 mb-2">
-                                For questions about these Terms of Service, please contact us:
-                            </p>
-                            <div className="bg-secondary p-6 rounded-xl mt-4">
-                                <p className="text-gray-800 mb-2"><strong>Gooba Global LTD</strong></p>
-                                <p className="text-gray-700 mb-2">Management company: RIFTEDCARS LLC</p>
-                                <p className="text-gray-700 mb-2">Chief Executive Officer: Aya Yakoulti</p>
-                                <p className="text-gray-700 mb-2">Website: goobagloballtd.com</p>
-                                <p className="text-gray-700 mb-2">Email: aya.yakoulti1999@gmail.com</p>
-                                <p className="text-gray-700 mb-2">Phone: +1 251-283-4593</p>
-                                <p className="text-gray-700">Address: 30 North Gould Street, Sheridan, WY 82801, United States of America</p>
-                            </div>
+                        <h2 className="mt-12 text-3xl">10. Contact</h2>
+                        <div className="mt-6 bg-secondary p-6">
+                            <p className="mb-2 font-bold text-gray-800">GOOBA GLOBAL LTD</p>
+                            <p className="mb-2">Store operator: RIFTEDCARS LLC</p>
+                            <p className="mb-2">CEO of RIFTEDCARS LLC: Aya Yakoulti</p>
+                            <p className="mb-2">Email: aya.yakoulti1999@gmail.com</p>
+                            <p className="mb-2">Phone: +1 251-283-4593</p>
+                            <p>30 North Gould Street, Sheridan, WY 82801, United States</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </section>
         </div>

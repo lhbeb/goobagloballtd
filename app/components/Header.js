@@ -39,7 +39,14 @@ export default function Header() {
 
       <nav className="site-container flex h-[76px] items-center justify-between" aria-label="Primary navigation">
         <Link href="/" onClick={() => setOpen(false)} aria-label="Gooba Global LTD home">
-          <Image src="/logo.png" alt="Gooba Global LTD logo" width={535} height={204} priority className="h-[52px] w-auto sm:h-[56px]" />
+          <Image
+            src="/logo.svg"
+            alt="Gooba Global LTD logo"
+            width={523}
+            height={193}
+            priority
+            className="h-[52px] w-auto sm:h-[56px]"
+          />
         </Link>
 
         <div className="hidden items-center gap-8 lg:flex">
@@ -56,7 +63,7 @@ export default function Header() {
               </Link>
             );
           })}
-          <Link href="/contact" className="btn-primary min-h-10 px-5 py-2">Start a project</Link>
+          <Link href="/contact" className="btn-primary min-h-10 px-5 py-2">Request a website</Link>
         </div>
 
         <button
@@ -81,7 +88,7 @@ export default function Header() {
                 {label}<span className="text-primary">↗</span>
               </Link>
             ))}
-            <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary mt-5 w-full">Start a project</Link>
+            <Link href="/contact" onClick={() => setOpen(false)} className="btn-primary mt-5 w-full">Request a website</Link>
           </div>
         </div>
       )}

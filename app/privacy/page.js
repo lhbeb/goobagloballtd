@@ -1,159 +1,83 @@
-import StripeLogo from '../components/StripeLogo';
-
 export const metadata = {
-    title: "Privacy Policy",
-    description: "Learn how we protect your privacy and handle your data.",
+    title: 'Privacy Policy',
+    description: 'How GOOBA GLOBAL LTD collects, uses, and shares personal information.',
 };
+
+const contact = [
+    'GOOBA GLOBAL LTD',
+    'Store operator: RIFTEDCARS LLC',
+    'Email: aya.yakoulti1999@gmail.com',
+    'Phone: +1 251-283-4593',
+    '30 North Gould Street, Sheridan, WY 82801, United States',
+];
 
 export default function PrivacyPage() {
     return (
         <div className="min-h-screen">
-            {/* Hero Section */}
             <section className="page-hero">
-                <div className="site-container">
-                    <div className="max-w-3xl">
-                        <p className="eyebrow">Legal</p>
-                        <h1 className="display-title">Privacy Policy</h1>
-                        <p className="mt-6 text-sm text-[#746966]">
-                            Last Updated: August 2026
-                        </p>
-                    </div>
+                <div className="site-container max-w-3xl">
+                    <p className="eyebrow">Legal</p>
+                    <h1 className="display-title">Privacy Policy</h1>
+                    <p className="mt-6 text-sm text-[#746966]">Last updated: August 2026</p>
                 </div>
             </section>
 
-            {/* Content Section */}
             <section className="py-16 sm:py-20">
                 <div className="site-container">
-                    <div className="surface-card mx-auto max-w-4xl p-7 sm:p-12">
-                        <div className="prose prose-lg max-w-none">
-                            <p className="text-xl text-gray-700 mb-8">
-                                At the GOOBA GLOBAL LTD store, managed by RIFTEDCARS LLC, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
-                            </p>
+                    <article className="surface-card mx-auto max-w-4xl p-7 text-gray-700 sm:p-12">
+                        <p className="text-xl leading-8">
+                            This policy explains how GOOBA GLOBAL LTD and its operator, RIFTEDCARS LLC, handle information when you visit this website, contact us, buy a product, or hire us.
+                        </p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">1. Information We Collect</h2>
+                        <h2 className="mt-12 text-3xl">1. Information you provide</h2>
+                        <p className="mt-4 leading-7">You may provide your name, email address, phone number, business name, project details, and messages when you contact us.</p>
+                        <p className="mt-4 leading-7">The website does not provide an on-site contact form. Use the listed email address to contact us.</p>
 
-                            <h3 className="text-2xl font-semibold mt-8 mb-4">1.1 Personal Information</h3>
-                            <p className="text-gray-700 mb-4">
-                                We may collect personal information that you voluntarily provide to us when you:
-                            </p>
-                            <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
-                                <li>Fill out our contact form</li>
-                                <li>Request a quote or consultation</li>
-                                <li>Subscribe to our newsletter</li>
-                                <li>Engage our services</li>
-                            </ul>
-                            <p className="text-gray-700 mb-6">
-                                This information may include: name, email address, phone number, business name, project details, and any other information you choose to provide.
-                            </p>
+                        <h2 className="mt-12 text-3xl">2. Visitor data collected automatically</h2>
+                        <p className="mt-4 leading-7">When a page loads, the website currently records technical visit data, including:</p>
+                        <ul className="mt-4 list-disc space-y-2 pl-6 leading-7">
+                            <li>IP address and approximate IP-based location</li>
+                            <li>Page URL, referring page, access time, and domain</li>
+                            <li>Browser, operating system, device type, language, and time zone</li>
+                            <li>Screen size, viewport size, device memory, processor count, touch support, and related browser signals</li>
+                            <li>A fingerprint hash created from those browser and device signals</li>
+                        </ul>
+                        <p className="mt-4 leading-7">IP location may be looked up through ipwho.is or ipapi.co. Visit notifications, including the technical data above, may be sent to RIFTEDCARS LLC through Telegram.</p>
 
-                            <h3 className="text-2xl font-semibold mt-8 mb-4">1.2 Automatically Collected Information</h3>
-                            <p className="text-gray-700 mb-6">
-                                When you visit our website, we may automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies installed on your device.
-                            </p>
+                        <h2 className="mt-12 text-3xl">3. How we use information</h2>
+                        <ul className="mt-4 list-disc space-y-2 pl-6 leading-7">
+                            <li>Respond to enquiries</li>
+                            <li>Provide purchased products or contracted services</li>
+                            <li>Operate, secure, and troubleshoot the website</li>
+                            <li>Understand website visits</li>
+                            <li>Meet legal obligations</li>
+                        </ul>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">2. How We Use Your Information</h2>
-                            <p className="text-gray-700 mb-4">
-                                We use the information we collect to:
-                            </p>
-                            <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
-                                <li>Respond to your inquiries and provide customer service</li>
-                                <li>Process and fulfill service requests</li>
-                                <li className="flex flex-wrap items-center gap-2"><StripeLogo className="h-7 w-auto rounded border border-gray-100" /> Process digital-product transactions through Stripe, our payment gateway</li>
-                                <li>Send you marketing and promotional communications (with your consent)</li>
-                                <li>Improve our website and services</li>
-                                <li>Comply with legal obligations</li>
-                                <li>Protect against fraudulent or illegal activity</li>
-                            </ul>
+                        <h2 className="mt-12 text-3xl">4. Payment information</h2>
+                        <p className="mt-4 leading-7">Online checkout is not active. Do not submit card information through this website or send it by email.</p>
+                        <p className="mt-4 leading-7">If Stripe checkout is enabled later, Stripe will handle payment information under its own privacy policy. GOOBA GLOBAL LTD will not store full card numbers.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">3. How We Share Your Information</h2>
-                            <p className="text-gray-700 mb-4">
-                                We do not sell your personal information. We may share your information in the following circumstances:
-                            </p>
-                            <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
-                                <li><span className="inline-flex items-center gap-2 align-middle"><StripeLogo className="h-7 w-auto rounded border border-gray-100" /><strong>Stripe:</strong></span> Digital-product payment information is processed by Stripe as our payment gateway and is subject to Stripe&apos;s privacy practices</li>
-                                <li><strong>Other Service Providers:</strong> We may share information with third-party service providers who perform services on our behalf (e.g., hosting, analytics, email delivery)</li>
-                                <li><strong>Legal Requirements:</strong> We may disclose information if required by law or in response to valid legal requests</li>
-                                <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred</li>
-                                <li><strong>With Your Consent:</strong> We may share your information for any other purpose with your consent</li>
-                            </ul>
+                        <h2 className="mt-12 text-3xl">5. Sharing</h2>
+                        <p className="mt-4 leading-7">We do not sell personal information. Information may be shared with service providers used to run the website and business, including hosting providers, IP-location services, Telegram, and—when enabled—Stripe. We may also disclose information when required by law or as part of a business transfer.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">4. Cookies and Tracking Technologies</h2>
-                            <p className="text-gray-700 mb-6">
-                                We use cookies and similar tracking technologies to track activity on our website and hold certain information. Cookies are files with small amounts of data that may include an anonymous unique identifier. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.
-                            </p>
+                        <h2 className="mt-12 text-3xl">6. Cookies</h2>
+                        <p className="mt-4 leading-7">This website does not use advertising or newsletter cookies. The website platform may set necessary cookies. You can control cookies in your browser.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">5. Data Security</h2>
-                            <p className="text-gray-700 mb-6">
-                                We implement appropriate technical and organizational security measures to protect your personal information. However, please note that no method of transmission over the internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee its absolute security.
-                            </p>
+                        <h2 className="mt-12 text-3xl">7. Retention and security</h2>
+                        <p className="mt-4 leading-7">We retain information only as long as needed for enquiries, orders, services, security, and legal obligations. We use reasonable safeguards, but no website or electronic transmission is completely secure.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">6. Data Retention</h2>
-                            <p className="text-gray-700 mb-6">
-                                We will retain your personal information only for as long as necessary for the purposes set out in this Privacy Policy, unless a longer retention period is required or permitted by law.
-                            </p>
+                        <h2 className="mt-12 text-3xl">8. Your choices and rights</h2>
+                        <p className="mt-4 leading-7">Depending on where you live, you may request access to, correction of, or deletion of your personal information, or object to certain uses. Contact us to make a request.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">7. Your Rights</h2>
-                            <p className="text-gray-700 mb-4">
-                                Depending on your location, you may have certain rights regarding your personal information, including:
-                            </p>
-                            <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
-                                <li>The right to access your personal information</li>
-                                <li>The right to correct inaccurate information</li>
-                                <li>The right to request deletion of your information</li>
-                                <li>The right to object to or restrict processing</li>
-                                <li>The right to data portability</li>
-                                <li>The right to withdraw consent</li>
-                            </ul>
-                            <p className="text-gray-700 mb-6">
-                                To exercise these rights, please contact us using the information provided below.
-                            </p>
+                        <h2 className="mt-12 text-3xl">9. International processing</h2>
+                        <p className="mt-4 leading-7">Information may be processed in the United States or in countries where our service providers operate.</p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6">8. Third-Party Links</h2>
-                            <p className="text-gray-700 mb-6">
-                                Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">9. Children&apos;s Privacy</h2>
-                            <p className="text-gray-700 mb-6">
-                                Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal information, please contact us.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">10. International Data Transfers</h2>
-                            <p className="text-gray-700 mb-6">
-                                Your information may be transferred to and maintained on computers located outside of your state, province, country, or other governmental jurisdiction where data protection laws may differ. By using our services, you consent to such transfers.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">11. Marketing Communications</h2>
-                            <p className="text-gray-700 mb-6">
-                                If you have opted in to receive marketing communications, you may opt out at any time by clicking the &quot;unsubscribe&quot; link in our emails or by contacting us directly.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">12. Changes to This Privacy Policy</h2>
-                            <p className="text-gray-700 mb-6">
-                                We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated&quot; date. We encourage you to review this Privacy Policy periodically.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">13. Contact Us</h2>
-                            <p className="text-gray-700 mb-4">
-                                If you have any questions about this Privacy Policy or our data practices, please contact us:
-                            </p>
-                            <div className="bg-secondary p-6 rounded-xl mt-4">
-                                <p className="text-gray-800 mb-2"><strong>Gooba Global LTD</strong></p>
-                                <p className="text-gray-700 mb-2">Management company: RIFTEDCARS LLC</p>
-                                <p className="text-gray-700 mb-2">Chief Executive Officer: Aya Yakoulti</p>
-                                <p className="text-gray-700 mb-2">Website: goobagloballtd.com</p>
-                                <p className="text-gray-700 mb-2">Email: aya.yakoulti1999@gmail.com</p>
-                                <p className="text-gray-700 mb-2">Phone: +1 251-283-4593</p>
-                                <p className="text-gray-700">Address: 30 North Gould Street, Sheridan, WY 82801, United States of America</p>
-                            </div>
-
-                            <div className="mt-12 p-6 bg-secondary rounded-xl border border-secondary-dark">
-                                <p className="text-gray-700">
-                                    <strong>Your privacy matters to us.</strong> We are committed to protecting your personal information and being transparent about our data practices. If you have any concerns, please don&apos;t hesitate to reach out.
-                                </p>
-                            </div>
+                        <h2 className="mt-12 text-3xl">10. Changes and contact</h2>
+                        <p className="mt-4 leading-7">We may update this policy. The date at the top of this page shows the latest version.</p>
+                        <div className="mt-6 bg-secondary p-6">
+                            {contact.map((line) => <p key={line} className="mb-2 last:mb-0">{line}</p>)}
                         </div>
-                    </div>
+                    </article>
                 </div>
             </section>
         </div>

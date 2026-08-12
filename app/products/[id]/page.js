@@ -20,9 +20,7 @@ export default function ProductDetailPage({ params }) {
             category: 'UI Kit',
             standardPrice: 18,
             extendedPrice: 89,
-            description: `Unlock the potential of your logistics business with Logix, a sleek and user-friendly Logistics Website UI Figma Template. Designed with desktop and mobile users in mind, this template is perfect for any company aiming to present its end-to-end logistics services.
-
-This template comes with five fully customizable pages, all optimized for easy navigation and responsiveness. The well-structured layout allows you to present your services and brand message, while the design's focus on visual appeal ensures your customers stay engaged.`,
+            description: `Logix is a five-page Figma UI kit for logistics websites. It includes Homepage, About, Services, Service Details, and Contact layouts in desktop and mobile sizes.`,
             note: 'All preview images are excluded from the download Figma files.',
             images: [
                 '/lisitings/Logix/photo1.png',
@@ -38,12 +36,10 @@ This template comes with five fully customizable pages, all optimized for easy n
             features: [
                 'Desktop & Mobile View',
                 'Support for Figma',
-                'Modern and clean design',
                 '1440 px (desktop) & 390 px (mobile)',
-                'Using FREE fonts from Google Fonts',
-                'Well documented',
-                'Easy to edit and customize',
-                'All graphics re-sizeable and editable'
+                'Uses Google Fonts',
+                'Editable Figma components',
+                'Resizable graphics'
             ],
             colors: ['Blue', 'Red', 'White'],
             perfectFor: ['Digital Marketing Agency', 'Marketing Company', 'Logistics Companies'],
@@ -61,7 +57,7 @@ This template comes with five fully customizable pages, all optimized for easy n
             category: 'Landing Page',
             standardPrice: 18,
             extendedPrice: 89,
-            description: `Ronel is a Startup Landing Page, Responsive, quick and easy customizable Modern Startup Landing Page Template that comes with NodeJs pages in 10 home page variations with 3 Authentication pages. It’s fully responsive and built with Bootstrap v5. Users will love your site because it gives them a unique user experience (UX), a clean, modern & beautiful design. You will be easily able to customize it for your needs.\n\nI have tried to follow the standards and modular structure while developing the theme. The following sections explain the theme File & Folder, structure, file structure, and plugins.`,
+            description: `Ronel is a Node.js and Bootstrap 5.3 template with 10+ homepage variations and three authentication pages. It includes login and signup layouts.`,
             images: [
                 '/lisitings/Ronel - NodeJs Landing Page Template/photo1.png'
             ],
@@ -70,19 +66,16 @@ This template comes with five fully customizable pages, all optimized for easy n
                 'Built with NodeJs & Bootstrap v5.3',
                 '10+ Different pages',
                 'Auth Pages included',
-                'Fully responsive in all devices',
-                'W3Validated code',
-                'Easy to Customize',
-                'Clean code',
-                'Modern Design',
+                'Responsive layouts',
+                'Editable source files',
                 'Log In & Sign Up Pages included'
             ],
             colors: ['Various Options'],
             perfectFor: ['Startups', 'SaaS', 'Agencies', 'Businesses'],
             specs: {
-                created: 'Recent',
+                created: 'Not listed',
                 compatible: 'NodeJs, Bootstrap v5',
-                fileSize: 'Varies',
+                fileSize: 'Not listed',
                 fileType: 'ZIP',
                 dimensions: 'Fully Responsive'
             }
@@ -98,9 +91,7 @@ This template comes with five fully customizable pages, all optimized for easy n
             licenseDescription: 'Use the template for one business or client website project.',
             creator: 'GOOBA GLOBAL LTD',
             aboutTitle: 'About WebConstruct',
-            description: `WebConstruct is an elegant, one-page Figma template designed for the modern needs of construction, engineering, and architectural firms. With a streamlined, sophisticated layout, it provides an ideal platform for presenting company portfolios, key projects, service offerings, and team profiles in an intuitive, engaging format.
-
-Built for a seamless user experience, WebConstruct combines visual appeal with functional design, allowing firms to establish a strong, professional digital presence.`,
+            description: `WebConstruct is a one-page Figma template for construction, engineering, and architecture firms. It includes sections for company information, services, projects, portfolios, and team profiles on a 1280 px Bootstrap grid.`,
             images: [
                 '/lisitings/WebConstruct/371b406ee08a100ebb1e790373df1135edadca3aaf14b0fe770d84626cd6c200.webp',
                 '/lisitings/WebConstruct/f2dba0bc07df45baa428554ee3ea5d4fedd1648976554e6f9b417948204438cf.webp'
@@ -108,19 +99,15 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
             pages: ['One Home Page'],
             features: [
                 'Bootstrap Grid 1280px',
-                'Fully customizable',
-                'Pixel-perfect layout',
-                'Clean, unique and modern design',
-                '24/7 support',
-                'Unique and modern style',
-                'Organized for easy editing',
-                'And much more'
+                'Editable Figma file',
+                'Organized layers',
+                'One-page layout'
             ],
             credits: ['Freepik', 'Font Awesome', 'Google Fonts'],
             colors: ['Yellow', 'Black', 'White'],
             perfectFor: ['Construction Firms', 'Engineering Companies', 'Architectural Studios', 'Contractors'],
             specs: {
-                created: 'Recent',
+                created: 'Not listed',
                 compatible: 'Figma',
                 fileSize: 'Digital Download',
                 fileType: 'FIG',
@@ -133,8 +120,12 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
             category: 'Web Design',
             standardPrice: 800,
             extendedPrice: 1500,
-            description: `Get a fully custom, professionally designed website built around your brand and business goals. Every site we deliver is crafted from scratch \u2014 no page builders, no cookie-cutter templates.\n\nFrom a sleek landing page to a full multi-page business site, we handle every detail: design, development, mobile responsiveness, speed optimisation, and launch. You work directly with us at every step.`,
-            note: 'Final deliverable is a live, hosted website. All source files are included with the Extended license.',
+            licenseName: 'Launch scope',
+            licenseDescription: 'A landing page or small business website. Final scope is confirmed in writing.',
+            extendedLicenseName: 'Expanded scope',
+            extendedLicenseDescription: 'A larger custom website project. Final scope is confirmed in writing.',
+            description: `Custom design and development for a landing page or multi-page business website. Scope, schedule, deliverables, and final price are confirmed before work begins.`,
+            note: 'Hosting and source-file delivery are confirmed in the project scope.',
             images: [
                 '/lisitings/Website Design and Development, Custom websites, Business websites, Custom Websites For Business/photo1-thumbnail.webp',
                 '/lisitings/Website Design and Development, Custom websites, Business websites, Custom Websites For Business/il_1140xN.6495666284_b92l.webp',
@@ -150,17 +141,17 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
                 'Fully custom design (no templates)',
                 'Desktop & Mobile responsive',
                 'SEO-ready structure',
-                'Fast load times',
+                'Performance testing',
                 'Contact form included',
                 'Google Analytics setup',
-                'Cross-browser tested',
+                'Browser testing',
                 'Post-launch support'
             ],
             colors: ['Your Brand Colors'],
             perfectFor: ['Small Businesses', 'Freelancers & Consultants', 'Startups', 'Service Providers'],
             specs: {
                 created: 'February 25, 2026',
-                compatible: 'All Major Browsers & Devices',
+                compatible: 'Confirmed in project scope',
                 fileSize: 'Live Website',
                 fileType: 'Custom Build',
                 dimensions: 'Fully Responsive'
@@ -228,7 +219,7 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
 
                             {/* Product Specs - Now below gallery */}
                             <div className="bg-white rounded-xl p-6">
-                                <h3 className="font-bold mb-4">Product Specs</h3>
+                                <h3 className="font-bold mb-4">File details</h3>
                                 <div className="space-y-3">
                                     <div className="flex justify-between py-2 border-b">
                                         <span className="text-gray-600">Created:</span>
@@ -282,7 +273,7 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
                                         />
                                         <div className="flex-1">
                                             <div className="font-semibold">{product.licenseName || 'Standard License'} - ${product.standardPrice}</div>
-                                            <p className="text-sm text-gray-600">{product.licenseDescription || 'Use by you or one client, in a single end product which end users are not charged for.'}</p>
+                                            <p className="text-sm text-gray-600">{product.licenseDescription || 'Use in one project for yourself or one client. End users cannot be charged to access the final product.'}</p>
                                         </div>
                                     </label>
                                     {!product.singlePrice && (
@@ -297,8 +288,8 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
                                                 className="mt-1 mr-3"
                                             />
                                             <div className="flex-1">
-                                                <div className="font-semibold">Extended License - ${product.extendedPrice}</div>
-                                                <p className="text-sm text-gray-600">Use by you or one client, in a single end product which end users can be charged for.</p>
+                                                <div className="font-semibold">{product.extendedLicenseName || 'Extended License'} - ${product.extendedPrice}</div>
+                                                <p className="text-sm text-gray-600">{product.extendedLicenseDescription || 'Use in one project for yourself or one client. End users may be charged to access the final product.'}</p>
                                             </div>
                                         </label>
                                     )}
@@ -307,17 +298,17 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
                                     onClick={() => setShowCheckout(true)}
                                     className="w-full bg-primary text-white py-4 rounded-lg font-bold hover:bg-primary-dark transition hover:shadow-xl hover:scale-[1.02] active:scale-100"
                                 >
-                                    Buy Now — ${selectedLicense === 'standard' ? product.standardPrice : product.extendedPrice}
+                                    How to purchase — ${selectedLicense === 'standard' ? product.standardPrice : product.extendedPrice}
                                 </button>
                                 <p className="mt-3 flex items-center justify-center gap-2 text-center text-xs text-gray-500 leading-relaxed">
                                     <StripeLogo className="h-7 w-auto rounded border border-gray-100" />
-                                    <span>Secure transaction processed using <strong>Stripe</strong> as our payment gateway.</span>
+                                    <span>Online payment is not active yet. Stripe integration is pending.</span>
                                 </p>
                             </div>
 
                             {/* Product Description */}
                             <div className="bg-white rounded-xl p-6">
-                                <h3 className="font-bold mb-4">{product.aboutTitle || 'About This Template'}</h3>
+                                <h3 className="font-bold mb-4">{product.aboutTitle || 'Product details'}</h3>
                                 <p className="text-gray-700 leading-relaxed whitespace-pre-line">{product.description}</p>
                                 {product.note && (
                                     <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-3 rounded">
@@ -386,7 +377,7 @@ Built for a seamless user experience, WebConstruct combines visual appeal with f
 
                         {/* Perfect For */}
                         <div className="bg-white rounded-xl p-4">
-                            <h3 className="font-bold mb-4">Perfect For</h3>
+                            <h3 className="font-bold mb-4">Designed for</h3>
                             <ul className="space-y-2">
                                 {product.perfectFor.map((item, idx) => (
                                     <li key={idx} className="flex items-center gap-2 text-gray-700">

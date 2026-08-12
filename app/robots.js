@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://goobagloballtd.com/sitemap.xml",
+    sitemap: "https://goobaglobaltd.com/sitemap.xml",
   };
 }

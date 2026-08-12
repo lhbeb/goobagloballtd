@@ -1,21 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import StripeLogo from './components/StripeLogo';
 
 const services = [
   {
     number: '01',
     title: 'Launch Website',
     price: 'From $650',
-    description: 'A focused, credible website for new businesses and lean teams that need to launch with confidence.',
-    details: ['Up to 5 core pages', 'Responsive development', 'Search-ready structure', '30 days launch support'],
+    description: 'A responsive website with up to five pages for a new or small business.',
+    details: ['Up to 5 pages', 'Responsive development', 'Page titles and metadata', '30 days launch support'],
   },
   {
     number: '02',
     title: 'Growth Website',
     price: 'From $1,250',
-    description: 'A broader digital platform for established businesses that need stronger content, conversion, and control.',
-    details: ['Up to 10 strategic pages', 'CMS or commerce support', 'Motion and interactions', '60 days launch support'],
+    description: 'A website with up to ten pages, with CMS or ecommerce options.',
+    details: ['Up to 10 pages', 'CMS or ecommerce options', 'Motion and interactions', '60 days launch support'],
   },
 ];
 
@@ -44,18 +43,18 @@ const products = [
   },
   {
     id: 'customwebsite',
-    title: 'Custom Website Design',
-    category: 'Bespoke Service',
+    title: 'Custom Website Design & Development',
+    category: 'Website Service',
     price: 'From $800',
     image: '/lisitings/Website Design and Development, Custom websites, Business websites, Custom Websites For Business/photo1-thumbnail.webp',
   },
 ];
 
 const process = [
-  ['Discover', 'We clarify the goal, audience, content, and commercial priorities.'],
-  ['Design', 'We shape the visual system and page hierarchy around the decisions users need to make.'],
-  ['Build', 'We develop a fast, responsive experience and refine it across screens.'],
-  ['Launch', 'We test, prepare the handoff, and support the first weeks after launch.'],
+  ['Scope', 'Define the pages, features, audience, content, and timeline.'],
+  ['Design', 'Create the page layouts and visual system.'],
+  ['Build', 'Develop the website and test it across screen sizes.'],
+  ['Launch', 'Review, publish, and hand over the website.'],
 ];
 
 export default function Home() {
@@ -66,65 +65,74 @@ export default function Home() {
         <div className="site-container relative grid min-h-[690px] items-center gap-12 py-20 lg:grid-cols-[1.05fr_.65fr] lg:py-24">
           <div className="max-w-4xl">
             <h1 className="display-title max-w-[900px]">
-              Digital work built for <span className="text-primary">clarity, trust, and growth.</span>
+              Digital products and <span className="text-primary">custom websites.</span>
             </h1>
             <p className="body-large mt-8 max-w-2xl">
-              Gooba Global LTD creates strategic websites and ready-to-use digital products for businesses that want a sharper, more credible presence online.
+              Buy website templates and UI kits, or hire Gooba Global LTD to design and build a custom website.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Link href="/contact" className="btn-primary">Start a project <span>↗</span></Link>
+              <Link href="/contact" className="btn-primary">Request a website <span>↗</span></Link>
               <Link href="/products" className="btn-secondary">Browse digital products</Link>
             </div>
           </div>
 
-          <aside className="surface-card relative mx-auto w-full max-w-md p-7 lg:ml-auto lg:p-9">
-            <span className="absolute -left-3 top-9 h-16 w-1 bg-highlight" aria-hidden="true" />
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-primary">What we deliver</p>
-            <div className="mt-7 space-y-6">
-              {[
-                ['Custom websites', 'Strategy, design, development'],
-                ['Digital products', 'Templates and interface kits'],
-                ['Global collaboration', 'Managed from Sheridan, Wyoming'],
-              ].map(([title, copy], index) => (
-                <div key={title} className="grid grid-cols-[28px_1fr] gap-4 border-t border-[#e4dcd7] pt-5 first:border-0 first:pt-0">
-                  <span className="text-2xl font-bold text-[#b78a43]">{index + 1}</span>
-                  <div><h2 className="text-2xl">{title}</h2><p className="mt-1 text-sm leading-6 text-[#746966]">{copy}</p></div>
-                </div>
-              ))}
+          <Link
+            href="/products/webconstruct"
+            className="group surface-card relative mx-auto w-full max-w-md overflow-hidden lg:ml-auto"
+            aria-label="View the featured WebConstruct Figma template"
+          >
+            <span className="absolute -left-px top-8 z-10 h-20 w-1 bg-highlight" aria-hidden="true" />
+            <div className="relative aspect-[16/10] overflow-hidden bg-[#ddd4ce]">
+              <Image
+                src="/lisitings/WebConstruct/371b406ee08a100ebb1e790373df1135edadca3aaf14b0fe770d84626cd6c200.webp"
+                alt="WebConstruct construction and architecture Figma template"
+                fill
+                sizes="(max-width: 1024px) 90vw, 34vw"
+                className="object-contain p-3 transition duration-700 group-hover:scale-[1.025]"
+              />
+              <span className="absolute left-5 top-5 bg-[#fffdf9] px-3 py-2 text-[10px] font-bold uppercase tracking-[0.16em] text-primary">Featured listing</span>
             </div>
-          </aside>
+            <div className="p-7 lg:p-8">
+              <div className="flex items-center justify-between gap-4">
+                <p className="text-[10px] font-bold uppercase tracking-[0.17em] text-[#9b7d4e]">Figma template</p>
+                <p className="text-lg font-bold text-primary">$199</p>
+              </div>
+              <h2 className="mt-4 text-4xl transition group-hover:text-primary">WebConstruct</h2>
+              <p className="mt-3 text-sm leading-7 text-[#746966]">A one-page Figma template for construction, engineering, and architecture firms.</p>
+              <div className="mt-6 flex items-center justify-between border-t border-[#e4dcd7] pt-5">
+                <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#746966]">Built by GOOBA GLOBAL LTD</span>
+                <span className="text-xl text-primary transition group-hover:translate-x-1">↗</span>
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
 
       <section className="border-y border-[#ded5cf] bg-[#efe8df] py-20 sm:py-28">
         <div className="site-container">
-          <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-            <div>
-              <p className="eyebrow">Digital shop</p>
-              <h2 className="section-title">Ready-made, thoughtfully built.</h2>
-            </div>
-            <div className="flex items-center gap-3 text-xs text-[#6f6461]"><StripeLogo className="h-7 w-auto rounded-sm" /> Secure checkout via Stripe</div>
+          <div>
+            <p className="eyebrow">Products &amp; services</p>
+            <h2 className="section-title">Templates and custom website work.</h2>
           </div>
 
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
             {products.map(product => (
-              <Link key={product.id} href={`/products/${product.id}`} className="group surface-card overflow-hidden">
-                <div className="relative aspect-[4/3] overflow-hidden bg-[#ddd4ce]">
-                  <Image src={product.image} alt={product.title} fill className="object-contain p-3 transition duration-700 group-hover:scale-[1.02]" />
-                  <span className="absolute left-4 top-4 bg-[#fffdf9] px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] text-primary">{product.category}</span>
+              <Link key={product.id} href={`/products/${product.id}`} className="group surface-card flex flex-col overflow-hidden">
+                <div className="relative aspect-[16/10] overflow-hidden bg-[#ddd4ce]">
+                  <Image src={product.image} alt={product.title} fill className="object-contain p-4 transition duration-700 group-hover:scale-[1.02]" />
+                  <span className="absolute left-5 top-5 bg-[#fffdf9] px-3.5 py-2 text-[10px] font-bold uppercase tracking-[0.15em] text-primary">{product.category}</span>
                 </div>
-                <div className="flex items-start justify-between gap-4 p-6">
+                <div className="flex flex-1 items-start justify-between gap-6 p-7 sm:p-8">
                   <div>
-                    <h3 className="text-2xl transition group-hover:text-primary">{product.title}</h3>
+                    <h3 className="text-3xl transition group-hover:text-primary sm:text-4xl">{product.title}</h3>
                     {product.creator && <p className="mt-2 text-[10px] font-bold uppercase tracking-[0.13em] text-[#746966]">Built by {product.creator}</p>}
-                    <p className="mt-3 text-xs font-bold uppercase tracking-[0.14em] text-[#9b7d4e]">View details ↗</p>
+                    <p className="mt-5 text-xs font-bold uppercase tracking-[0.14em] text-[#9b7d4e]">View details ↗</p>
                   </div>
-                  <span className="whitespace-nowrap text-sm font-bold text-primary">{product.price}</span>
+                  <span className="whitespace-nowrap text-base font-bold text-primary">{product.price}</span>
                 </div>
               </Link>
             ))}
           </div>
-          <div className="mt-8 text-right"><Link href="/products" className="btn-secondary">View all products</Link></div>
         </div>
       </section>
 
@@ -135,36 +143,35 @@ export default function Home() {
             <div className="relative aspect-[589/703] overflow-hidden bg-[#9b9189]">
               <Image
                 src="/ayayakoulti.png"
-                alt="Aya Yakoulti, CEO of Gooba Global LTD"
+                alt="Aya Yakoulti, CEO of RIFTEDCARS LLC"
                 fill
                 sizes="(max-width: 1024px) 90vw, 36vw"
                 className="object-cover"
               />
             </div>
             <div className="absolute bottom-5 left-0 bg-primary px-5 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-white">
-              CEO · Gooba Global LTD
+              CEO · RIFTEDCARS LLC
             </div>
           </div>
 
           <div>
-            <p className="eyebrow">Founder-led vision</p>
-            <h2 className="section-title max-w-3xl">Design, technology, and security under one direction.</h2>
+            <p className="eyebrow">Leadership</p>
+            <h2 className="section-title max-w-3xl">Aya Yakoulti, CEO of RIFTEDCARS LLC.</h2>
             <p className="body-large mt-7 max-w-2xl">
-              Aya Yakoulti leads Gooba Global LTD as a web developer, UI/UX designer, security professional, and full-stack website and web-app builder.
+              RIFTEDCARS LLC operates Gooba Global LTD. Aya&apos;s work includes web development, UI/UX design, full-stack web apps, and website security.
             </p>
 
-            <blockquote className="relative mt-9 border-l-4 border-highlight bg-[#efe8df] px-7 py-8 sm:px-10 sm:py-10">
-              <span className="absolute right-7 top-2 text-7xl font-bold leading-none text-primary/15" aria-hidden="true">“</span>
+            <div className="relative mt-9 border-l-4 border-highlight bg-[#efe8df] px-7 py-8 sm:px-10 sm:py-10">
               <p className="relative max-w-3xl text-2xl font-bold leading-[1.2] tracking-[-0.035em] text-[#302727] sm:text-3xl">
-                “The strongest digital products make complexity feel simple. Every interface should earn trust, every line of code should serve a purpose, and security should be part of the foundation—not an afterthought.”
+                Aya&apos;s approach: build clear interfaces, reliable code, and security into every website from the start.
               </p>
-              <footer className="mt-6 border-t border-[#d5c8c0] pt-5">
+              <div className="mt-6 border-t border-[#d5c8c0] pt-5">
                 <p className="text-sm font-bold text-primary">Aya Yakoulti</p>
-                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#796d69]">Chief Executive Officer</p>
-              </footer>
-            </blockquote>
+                <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#796d69]">CEO, RIFTEDCARS LLC</p>
+              </div>
+            </div>
 
-            <Link href="/about" className="mt-8 inline-flex border-b border-primary pb-1 text-sm font-bold text-primary">Meet the CEO ↗</Link>
+            <Link href="/about" className="mt-8 inline-flex border-b border-primary pb-1 text-sm font-bold text-primary">About Aya Yakoulti ↗</Link>
           </div>
         </div>
       </section>
@@ -172,9 +179,9 @@ export default function Home() {
       <section className="border-b border-[#ded5cf] bg-[#fffdf9]">
         <div className="site-container grid divide-y divide-[#ded5cf] py-1 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {[
-            ['Transparent pricing', 'Clear starting rates before you enquire'],
-            ['Responsive by default', 'Designed and tested across modern screens'],
-            ['Direct communication', 'A focused process without unnecessary layers'],
+            ['Starting prices', 'Starting prices are shown for each website package.'],
+            ['Responsive websites', 'Built and tested for phones, tablets, and desktop screens.'],
+            ['Direct contact', 'Work directly with Gooba Global LTD.'],
           ].map(([title, copy]) => (
             <div key={title} className="px-0 py-7 sm:px-7 first:sm:pl-0 last:sm:pr-0">
               <p className="text-sm font-bold text-[#302727]">{title}</p>
@@ -189,9 +196,9 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[.7fr_1.3fr] lg:gap-16">
             <div>
               <p className="eyebrow">Website services</p>
-              <h2 className="section-title">Two clear paths to launch.</h2>
-              <p className="body-large mt-6">Choose a focused starting point. Scope can be refined after our first conversation.</p>
-              <Link href="/listings" className="mt-8 inline-flex border-b border-primary pb-1 text-sm font-bold text-primary">Compare full scope ↗</Link>
+              <h2 className="section-title">Custom website packages.</h2>
+              <p className="body-large mt-6">Choose a package based on the number of pages and features you need.</p>
+              <Link href="/listings" className="mt-8 inline-flex border-b border-primary pb-1 text-sm font-bold text-primary">View website services ↗</Link>
             </div>
             <div className="border-t border-[#cfc4be]">
               {services.map((service) => (
@@ -216,8 +223,8 @@ export default function Home() {
         <div className="site-container grid gap-12 lg:grid-cols-[.65fr_1.35fr] lg:gap-20">
           <div>
             <p className="eyebrow">Our process</p>
-            <h2 className="section-title">Structured enough to move quickly.</h2>
-            <p className="body-large mt-6">A practical process keeps decisions visible, feedback useful, and the project moving.</p>
+            <h2 className="section-title">How website projects work.</h2>
+            <p className="body-large mt-6">Four steps from scope to launch.</p>
           </div>
           <ol className="grid gap-px border border-[#ded5cf] bg-[#ded5cf] sm:grid-cols-2">
             {process.map(([title, copy], index) => (

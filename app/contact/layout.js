@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Contact',
-  description: 'Contact Gooba Global LTD about a website project, digital product, or business enquiry.',
+  description: 'Contact GOOBA GLOBAL LTD about digital products, websites, web apps, or UI/UX design.',
 };
 
 export default function ContactLayout({ children }) {
