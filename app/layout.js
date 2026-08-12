@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
       <body>
         <VisitorTracker />
         <Header />
-        <main className="min-h-screen pt-[104px]">
+        <main className="min-h-screen pt-[112px]">
           {children}
         </main>
         <ContactSection />

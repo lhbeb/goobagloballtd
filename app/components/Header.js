@@ -19,8 +19,8 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-[#fffdf9]/95 backdrop-blur-xl">
-      <div className="h-7 bg-[#241b1b] text-[#eee4df]">
-        <div className="site-container flex h-full items-center justify-center overflow-hidden text-[9px] font-semibold uppercase tracking-[0.08em] sm:text-[11px] sm:tracking-[0.14em]">
+      <div className="h-9 bg-[#241b1b] text-[#eee4df]">
+        <div className="site-container flex h-full items-center justify-center overflow-hidden text-[10px] font-semibold uppercase tracking-[0.1em] sm:text-xs sm:tracking-[0.14em]">
           <div className="contact-rotator w-full text-center">
             <div className="contact-rotator-track whitespace-nowrap">
               <a href="mailto:aya.yakoulti1999@gmail.com" className="contact-rotator-item transition hover:text-white">

@@ -145,16 +145,16 @@ select {
   }
   48%,
   88% {
-    transform: translateY(-14px);
+    transform: translateY(-16px);
   }
   98%,
   100% {
-    transform: translateY(-28px);
+    transform: translateY(-32px);
   }
 }
 
 .contact-rotator {
-  height: 14px;
+  height: 16px;
   overflow: hidden;
 }
 
@@ -165,10 +165,10 @@ select {
 
 .contact-rotator-item {
   display: flex;
-  height: 14px;
+  height: 16px;
   align-items: center;
   justify-content: center;
-  line-height: 14px;
+  line-height: 16px;
 }
 
 .contact-rotator:hover .contact-rotator-track,
