@@ -168,6 +168,10 @@ export default function Home() {
               <div className="mt-6 border-t border-[#d5c8c0] pt-5">
                 <p className="text-sm font-bold text-primary">Aya Yakoulti</p>
                 <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.16em] text-[#796d69]">CEO, RIFTEDCARS LLC</p>
+                <div className="mt-4 flex flex-col gap-2 text-sm sm:flex-row sm:flex-wrap sm:gap-x-6">
+                  <a href="mailto:aya.yakoulti1999@gmail.com" className="break-all font-semibold text-[#4f4441] transition hover:text-primary">aya.yakoulti1999@gmail.com</a>
+                  <a href="tel:+12512834593" className="font-semibold text-[#4f4441] transition hover:text-primary">1-2512834593</a>
+                </div>
               </div>
             </div>
 
