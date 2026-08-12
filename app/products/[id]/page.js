@@ -298,7 +298,7 @@ export default function ProductDetailPage({ params }) {
                                     onClick={() => setShowCheckout(true)}
                                     className="w-full bg-primary text-white py-4 rounded-lg font-bold hover:bg-primary-dark transition hover:shadow-xl hover:scale-[1.02] active:scale-100"
                                 >
-                                    How to purchase — ${selectedLicense === 'standard' ? product.standardPrice : product.extendedPrice}
+                                    Continue to checkout — ${selectedLicense === 'standard' ? product.standardPrice : product.extendedPrice}
                                 </button>
                                 <div className="mt-3 flex items-center justify-center" aria-label="Stripe">
                                     <StripeLogo className="h-7 w-auto rounded border border-gray-100" />
