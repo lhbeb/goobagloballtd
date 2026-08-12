@@ -1,15 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
-  <title id="title">Zeinab Lundin</title>
-  <desc id="desc">Zeinab Lundin shop logo in white</desc>
-  <rect width="520" height="150" fill="none"/>
-  <circle cx="72" cy="75" r="55" fill="#FFFFFF"/>
-  <text x="72" y="88" fill="#16a34a" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="800" text-anchor="middle" letter-spacing="0">
-    ZL
-  </text>
-  <text x="148" y="67" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="800" letter-spacing="0">
-    Zeinab Lundin
-  </text>
-  <text x="150" y="105" fill="#DCFCE7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" letter-spacing="0">
-    ZeinabLundin.shop
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 160" role="img" aria-labelledby="title desc">
+  <title id="title">Gooba Global LTD</title>
+  <desc id="desc">Gooba Global LTD logo in white</desc>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="10" y="10" width="140" height="140" rx="36" fill="#BF2525"/>
+    <circle cx="80" cy="80" r="43" stroke="#D7A44A" stroke-width="10"/>
+    <path d="M80 37a43 43 0 0 0 0 86c13.8 0 26.1-6.5 34-16.6V80H82" stroke="#FFFAF5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M41 80h78M80 38c-12 12-18 26-18 42s6 30 18 42M80 38c12 12 18 26 18 42" stroke="#D7A44A" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+    <text x="178" y="77" fill="#FFFAF5" font-family="Georgia, serif" font-size="52" font-weight="700" letter-spacing="1">GOOBA GLOBAL</text>
+    <text x="181" y="116" fill="#D7A44A" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="9">LTD · DIGITAL STUDIO</text>
+  </g>
 </svg>

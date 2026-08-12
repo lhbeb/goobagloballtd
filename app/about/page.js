@@ -1,190 +1,111 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-    title: "About Us - Zeinab Lundin",
-    description: "Learn about Zeinab Lundin and our mission to deliver exceptional web design services.",
+  title: 'About',
+  description: 'Learn about Gooba Global LTD, its leadership, and the company managing the store.',
 };
 
+const principles = [
+  ['Clarity before decoration', 'Every page should help a visitor understand the offer and make a confident next decision.'],
+  ['Useful collaboration', 'We keep feedback focused, explain tradeoffs, and maintain a visible path from brief to launch.'],
+  ['Care in the details', 'Typography, responsive behavior, content structure, and performance all shape credibility.'],
+];
+
 export default function AboutPage() {
-    return (
-        <div className="min-h-screen">
-            {/* Hero Section */}
-            <section className="py-20 bg-primary">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-3xl mx-auto text-center text-white">
-                        <h1 className="text-5xl sm:text-6xl font-bold mb-6">Our Story</h1>
-                        <p className="text-xl sm:text-2xl opacity-90">
-                            A design studio that builds more than websites
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Story Section */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto">
-                        <h2 className="text-4xl font-bold mb-8 text-center">Our Story</h2>
-                        <div className="prose prose-lg max-w-none text-gray-700 space-y-6">
-                            <p className="text-xl leading-relaxed">
-                                <span className="font-bold gradient-text">Zeinab Lundin</span> started with one belief: your website should do real work for your business — not just exist online. We&apos;ve built our studio around that idea, creating websites that look stunning and are engineered to convert visitors into clients.
-                            </p>
-                            <p className="text-lg leading-relaxed">
-                                Every project we take on is treated like it&apos;s our own business on the line. We obsess over the details — the copy, the layout, the speed, the mobile experience — so you don&apos;t have to. Whether you&apos;re launching a new brand or refreshing an existing one, we bring the same energy and craftsmanship to every engagement.
-                            </p>
-                            <p className="text-lg leading-relaxed">
-                                Based in Tanger, Morocco, we work with clients around the world who want websites that set them apart. Our process is transparent, our timelines are honest, and our designs speak for themselves.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Values Section */}
-            <section className="py-20 bg-slate-50">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-5xl mx-auto">
-                        <h2 className="text-4xl font-bold mb-12 text-center">Our Values</h2>
-
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-                                <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center mb-6 mx-auto">
-                                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                                    </svg>
-                                </div>
-                                <h3 className="text-2xl font-bold mb-4 text-center">Craft Over Shortcuts</h3>
-                                <p className="text-gray-600 text-center">
-                                    We sweat the details others skip — every pixel, every word, every interaction is intentional.
-                                </p>
-                            </div>
-
-                            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-                                <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center mb-6 mx-auto">
-                                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                    </svg>
-                                </div>
-                                <h3 className="text-2xl font-bold mb-4 text-center">Your Success Is Our KPI</h3>
-                                <p className="text-gray-600 text-center">
-                                    Your success is our success. We work closely with you at every stage and celebrate your wins.
-                                </p>
-                            </div>
-
-                            <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-                                <div className="w-16 h-16 rounded-full gradient-primary flex items-center justify-center mb-6 mx-auto">
-                                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                                    </svg>
-                                </div>
-                                <h3 className="text-2xl font-bold mb-4 text-center">Always Evolving</h3>
-                                <p className="text-gray-600 text-center">
-                                    Design trends move fast. We stay ahead of them so your website never looks dated.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Process Section */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-5xl mx-auto">
-                        <h2 className="text-4xl font-bold mb-12 text-center">Our Process</h2>
-
-                        <div className="space-y-8">
-                            <div className="flex gap-6 items-start">
-                                <div className="flex-shrink-0 w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold text-xl">
-                                    1
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold mb-2">Discovery & Strategy</h3>
-                                    <p className="text-gray-600 text-lg">
-                                        We begin with an in-depth consultation to understand your vision, business goals, and target audience. This forms the foundation of a tailored strategy.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex gap-6 items-start">
-                                <div className="flex-shrink-0 w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold text-xl">
-                                    2
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold mb-2">Design & Prototyping</h3>
-                                    <p className="text-gray-600 text-lg">
-                                        Our designers craft stunning, user-centric interfaces. We then build interactive prototypes, allowing you to visualize and refine the experience before development.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex gap-6 items-start">
-                                <div className="flex-shrink-0 w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold text-xl">
-                                    3
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold mb-2">Development & QA</h3>
-                                    <p className="text-gray-600 text-lg">
-                                        Our developers bring the design to life with clean, efficient code. Rigorous quality assurance ensures your site is fast, responsive, and flawless across all devices.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="flex gap-6 items-start">
-                                <div className="flex-shrink-0 w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold text-xl">
-                                    4
-                                </div>
-                                <div>
-                                    <h3 className="text-2xl font-bold mb-2">Launch & Support</h3>
-                                    <p className="text-gray-600 text-lg">
-                                        We handle the seamless deployment of your new website. Our commitment extends beyond launch with training and ongoing support to ensure your continued success.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Stats Section */}
-            <section className="py-20 gradient-primary">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-5xl mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
-                            <div>
-                                <div className="text-5xl font-bold mb-2">100+</div>
-                                <div className="text-xl opacity-90">Projects Delivered</div>
-                            </div>
-                            <div>
-                                <div className="text-5xl font-bold mb-2">98%</div>
-                                <div className="text-xl opacity-90">Client Satisfaction</div>
-                            </div>
-                            <div>
-                                <div className="text-5xl font-bold mb-2">5+</div>
-                                <div className="text-xl opacity-90">Years in Business</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* CTA Section */}
-            <section className="py-20 bg-white">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-                        Ready to Start?
-                    </h2>
-                    <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-                        Let&apos;s have a conversation about your project — no pressure, no hard sell
-                    </p>
-                    <Link
-                        href="/contact"
-                        className="inline-block px-10 py-4 gradient-primary text-white rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
-                    >
-                        Get in Touch
-                    </Link>
-                </div>
-            </section>
+  return (
+    <div>
+      <section className="page-hero">
+        <div className="site-container grid gap-10 lg:grid-cols-[1fr_.55fr] lg:items-end">
+          <div className="max-w-4xl">
+            <p className="eyebrow">About Gooba Global</p>
+            <h1 className="display-title">Small enough to stay focused. Built to work globally.</h1>
+          </div>
+          <p className="body-large">Gooba Global LTD is a digital store and studio creating websites, templates, and interface products for modern businesses.</p>
         </div>
-    );
+      </section>
+
+      <section className="py-20 sm:py-28">
+        <div className="site-container grid gap-14 lg:grid-cols-[.55fr_1fr] lg:gap-24">
+          <div>
+            <p className="eyebrow">Our point of view</p>
+            <h2 className="section-title">Good digital work should make the business easier to understand.</h2>
+          </div>
+          <div className="space-y-7 text-base leading-8 text-[#665b58] sm:text-lg">
+            <p>We started from a practical belief: a website should do more than look current. It should establish trust, explain the offer, and make the next step obvious.</p>
+            <p>That approach shapes both our custom website work and the digital products sold through our store. We value structured content, confident visual systems, responsive execution, and honest communication.</p>
+            <p>The GOOBA GLOBAL LTD store is managed by <strong className="text-[#302727]">RIFTEDCARS LLC</strong> from Sheridan, Wyoming, United States.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-[#ded5cf] bg-[#efe8df] py-20 sm:py-28">
+        <div className="site-container">
+          <div className="grid gap-12 lg:grid-cols-[.82fr_1.18fr] lg:items-center lg:gap-20">
+            <div className="relative mx-auto w-full max-w-[460px] lg:mx-0">
+              <div className="absolute -bottom-4 -left-4 h-full w-full border border-[#b99f91]" aria-hidden="true" />
+              <div className="relative aspect-[589/703] overflow-hidden bg-[#9b9189]">
+                <Image
+                  src="/ayayakoulti.png"
+                  alt="Aya Yakoulti, CEO of Gooba Global LTD"
+                  fill
+                  sizes="(max-width: 1024px) 90vw, 38vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute bottom-5 right-0 bg-primary px-5 py-3 text-[10px] font-bold uppercase tracking-[0.18em] text-white">
+                Founder-led digital expertise
+              </div>
+            </div>
+
+            <div>
+              <p className="eyebrow">Meet the CEO</p>
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl">Aya Yakoulti</h2>
+              <p className="mt-3 text-xs font-bold uppercase tracking-[0.18em] text-primary">Chief Executive Officer · Digital Builder</p>
+              <p className="body-large mt-7 max-w-2xl">
+                Aya Yakoulti leads Gooba Global LTD and brings together strategy, design, development, and security to build dependable digital experiences. She works across the full product journey—from shaping an intuitive interface to engineering the website or web application behind it.
+              </p>
+              <p className="mt-5 max-w-2xl text-sm leading-7 text-[#746966] sm:text-base">
+                As a web developer, UI/UX designer, security professional, and full-stack builder, Aya focuses on creating digital products that feel clear to use, professional to present, and thoughtfully constructed from front end to back end.
+              </p>
+
+              <div className="mt-9 grid border-y border-[#c9bbb3] sm:grid-cols-2 sm:divide-x sm:divide-[#c9bbb3]">
+                {[
+                  ['01', 'Web development'],
+                  ['02', 'UI/UX design'],
+                  ['03', 'Security'],
+                  ['04', 'Full-stack web apps'],
+                ].map(([number, skill], index) => (
+                  <div key={skill} className={`flex items-center gap-4 py-4 sm:px-5 ${index < 3 ? 'border-b border-[#c9bbb3]' : ''} ${index === 2 ? 'sm:border-b-0' : ''} ${index % 2 === 0 ? 'sm:pl-0' : ''}`}>
+                    <span className="text-[10px] font-bold text-[#a08152]">{number}</span>
+                    <span className="text-sm font-bold text-[#302727]">{skill}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-9">
+                <Link href="/contact" className="btn-primary">Start a conversation <span>↗</span></Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 sm:py-28">
+        <div className="site-container">
+          <p className="eyebrow">How we work</p>
+          <div className="mt-4 grid border-y border-[#cfc4be] lg:grid-cols-3 lg:divide-x lg:divide-[#cfc4be]">
+            {principles.map(([title, copy], index) => (
+              <article key={title} className="border-b border-[#cfc4be] py-8 lg:border-b-0 lg:px-8 first:lg:pl-0 last:lg:pr-0">
+                <span className="text-[11px] font-bold text-[#a08152]">0{index + 1}</span>
+                <h2 className="mt-8 text-3xl">{title}</h2>
+                <p className="mt-4 text-sm leading-7 text-[#746966]">{copy}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mt-10"><Link href="/contact" className="btn-primary">Work with us <span>↗</span></Link></div>
+        </div>
+      </section>
+    </div>
+  );
 }

@@ -1,30 +1,44 @@
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
 import VisitorTracker from "./components/VisitorTracker";
-
-const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+import StripeNotice from "./components/StripeNotice";
 
 export const metadata = {
-  title: "Zeinab Lundin - Premium Web Design Services",
-  description: "Professional web design services starting from $800. Transform your business with stunning, modern websites.",
+  metadataBase: new URL("https://goobagloballtd.com"),
+  title: {
+    default: "Gooba Global LTD — Digital Design & Development",
+    template: "%s | Gooba Global LTD",
+  },
+  description: "Gooba Global LTD creates clear, high-performing websites and digital products for ambitious businesses worldwide.",
+  openGraph: {
+    type: "website",
+    siteName: "Gooba Global LTD",
+    title: "Gooba Global LTD — Digital Design & Development",
+    description: "Clear, high-performing websites and digital products for ambitious businesses worldwide.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Gooba Global LTD — Digital Design & Development",
+    description: "Clear, high-performing websites and digital products for ambitious businesses worldwide.",
+  },
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon.svg',
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={dmSans.className}>
+      <body>
         <VisitorTracker />
         <Header />
-        <main className="min-h-screen pt-32 sm:pt-28">
+        <main className="min-h-screen pt-[104px]">
           {children}
         </main>
         <ContactSection />
+        <StripeNotice />
         <Footer />
       </body>
     </html>

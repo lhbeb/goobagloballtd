@@ -1,50 +1,57 @@
+import StripeLogo from '../components/StripeLogo';
+
 export const metadata = {
-    title: "Terms of Service - Zeinab Lundin",
+    title: "Terms of Service",
     description: "Read our terms of service for web design services.",
 };
 
 export default function TermsPage() {
     return (
-        <div className="min-h-screen bg-slate-50">
+        <div className="min-h-screen">
             {/* Hero Section */}
-            <section className="py-20 bg-primary">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-3xl mx-auto text-center text-white">
-                        <h1 className="text-5xl sm:text-6xl font-bold mb-6">Terms of Service</h1>
-                        <p className="text-xl opacity-90">
-                            Last Updated: February 2026
+            <section className="page-hero">
+                <div className="site-container">
+                    <div className="max-w-3xl">
+                        <p className="eyebrow">Legal</p>
+                        <h1 className="display-title">Terms of Service</h1>
+                        <p className="mt-6 text-sm text-[#746966]">
+                            Last Updated: August 2026
                         </p>
                     </div>
                 </div>
             </section>
 
             {/* Content Section */}
-            <section className="py-20">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 sm:p-12">
+            <section className="py-16 sm:py-20">
+                <div className="site-container">
+                    <div className="surface-card mx-auto max-w-4xl p-7 sm:p-12">
                         <div className="prose prose-lg max-w-none">
                             <p className="text-xl text-gray-700 mb-8">
-                                Welcome to Zeinab Lundin. By engaging our web design services, you agree to be bound by these Terms of Service.
+                                Welcome to the GOOBA GLOBAL LTD store, managed by RIFTEDCARS LLC. By engaging our web design services, you agree to be bound by these Terms of Service.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">1. Services</h2>
                             <p className="text-gray-700 mb-6">
-                                Zeinab Lundin provides professional web design and development services. The specific services, deliverables, timeline, and pricing will be outlined in a separate project agreement or proposal.
+                                Gooba Global LTD provides professional web design and development services. The specific services, deliverables, timeline, and pricing will be outlined in a separate project agreement or proposal.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">2. Payment Terms</h2>
                             <p className="text-gray-700 mb-4">
-                                <strong>2.1 Pricing:</strong> Our services start from $800 as outlined on our website. Final pricing will be determined based on your specific project requirements.
+                                <strong>2.1 Pricing:</strong> Our website services start from $650 as outlined on our website. Final pricing is determined by the selected package and specific project requirements.
                             </p>
                             <p className="text-gray-700 mb-4">
-                                <strong>2.2 Payment Schedule:</strong> Unless otherwise agreed, payment terms are as follows:
+                                <span className="mb-2 inline-flex items-center gap-2"><StripeLogo className="h-8 w-auto rounded border border-gray-100" /><strong>2.2 Digital Product Payments</strong></span><br />
+                                All transactions for digital products are processed using Stripe as our third-party payment gateway. Stripe&apos;s services and terms may also apply to the payment transaction.
+                            </p>
+                            <p className="text-gray-700 mb-4">
+                                <strong>2.3 Service Payment Schedule:</strong> Unless otherwise agreed, payment terms are as follows:
                             </p>
                             <ul className="list-disc pl-6 mb-6 text-gray-700 space-y-2">
                                 <li>50% deposit required to commence work</li>
                                 <li>50% due upon project completion and before final delivery</li>
                             </ul>
                             <p className="text-gray-700 mb-6">
-                                <strong>2.3 Late Payments:</strong> Payments not received within 14 days of the due date may result in project suspension and/or late fees.
+                                <strong>2.4 Late Payments:</strong> Payments not received within 14 days of the due date may result in project suspension and/or late fees.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">3. Project Timeline</h2>
@@ -73,7 +80,7 @@ export default function TermsPage() {
                                 <strong>6.1 Ownership:</strong> Upon receipt of full payment, all custom work created specifically for your project will be transferred to you.
                             </p>
                             <p className="text-gray-700 mb-4">
-                                <strong>6.2 Portfolio Rights:</strong> Zeinab Lundin reserves the right to display completed projects in our portfolio and marketing materials unless otherwise agreed in writing.
+                                <strong>6.2 Portfolio Rights:</strong> Gooba Global LTD reserves the right to display completed projects in our portfolio and marketing materials unless otherwise agreed in writing.
                             </p>
                             <p className="text-gray-700 mb-6">
                                 <strong>6.3 Third-Party Assets:</strong> Any third-party assets (fonts, stock images, plugins) used in your project remain the property of their respective owners and may require separate licensing.
@@ -96,7 +103,7 @@ export default function TermsPage() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">10. Limitation of Liability</h2>
                             <p className="text-gray-700 mb-6">
-                                Zeinab Lundin&apos;s liability is limited to the amount paid for the services. We are not liable for indirect, incidental, or consequential damages.
+                                Gooba Global LTD&apos;s liability is limited to the amount paid for the services. We are not liable for indirect, incidental, or consequential damages.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">11. Confidentiality</h2>
@@ -106,7 +113,7 @@ export default function TermsPage() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">12. Governing Law</h2>
                             <p className="text-gray-700 mb-6">
-                                These terms shall be governed by and construed in accordance with the laws of Morocco. Any disputes will be resolved in the courts of Morocco.
+                                These terms shall be governed by and construed in accordance with the laws of the State of Wyoming, United States of America. Any disputes will be resolved in the courts of Wyoming.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">13. Changes to Terms</h2>
@@ -118,12 +125,14 @@ export default function TermsPage() {
                             <p className="text-gray-700 mb-2">
                                 For questions about these Terms of Service, please contact us:
                             </p>
-                            <div className="bg-green-50 p-6 rounded-xl mt-4">
-                                <p className="text-gray-800 mb-2"><strong>Zeinab Lundin</strong></p>
-                                <p className="text-gray-700 mb-2">ZeinabLundin.shop</p>
-                                <p className="text-gray-700 mb-2">Email: marouanndoumm12@outlook.com</p>
-                                <p className="text-gray-700 mb-2">Phone: +1 9129231747</p>
-                                <p className="text-gray-700">Address: 14 SECTEUR 01 KASBAB MEHDIA KENITRA 14020</p>
+                            <div className="bg-secondary p-6 rounded-xl mt-4">
+                                <p className="text-gray-800 mb-2"><strong>Gooba Global LTD</strong></p>
+                                <p className="text-gray-700 mb-2">Management company: RIFTEDCARS LLC</p>
+                                <p className="text-gray-700 mb-2">Chief Executive Officer: Aya Yakoulti</p>
+                                <p className="text-gray-700 mb-2">Website: goobagloballtd.com</p>
+                                <p className="text-gray-700 mb-2">Email: aya.yakoulti1999@gmail.com</p>
+                                <p className="text-gray-700 mb-2">Phone: +1 251-283-4593</p>
+                                <p className="text-gray-700">Address: 30 North Gould Street, Sheridan, WY 82801, United States of America</p>
                             </div>
                         </div>
                     </div>

@@ -1,95 +1,99 @@
-'use client';
-
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import StripeLogo from '../components/StripeLogo';
+
+export const metadata = {
+  title: 'Digital Products',
+  description: 'Browse templates, UI kits, and custom digital solutions from Gooba Global LTD.',
+};
+
+const products = [
+  {
+    id: 'logix',
+    title: 'Logix — Logistics Website UI Kit',
+    category: 'Figma UI Kit',
+    price: 18,
+    image: '/lisitings/Logix/photo1.png',
+    description: 'A polished interface system for logistics businesses that need a credible, modern online presence.',
+    tags: ['Figma', 'Responsive', '12 screens'],
+  },
+  {
+    id: 'ronel',
+    title: 'Ronel — NodeJS Landing Page',
+    category: 'Website Template',
+    price: 18,
+    image: '/lisitings/Ronel - NodeJs Landing Page Template/photo1.png',
+    description: 'A responsive startup landing page designed to help teams publish a clear launch experience quickly.',
+    tags: ['NodeJS', 'Bootstrap', 'Responsive'],
+  },
+  {
+    id: 'webconstruct',
+    title: 'WebConstruct — Construction Figma Template',
+    category: 'Figma Template',
+    price: 199,
+    fixedPrice: true,
+    creator: 'GOOBA GLOBAL LTD',
+    image: '/lisitings/WebConstruct/371b406ee08a100ebb1e790373df1135edadca3aaf14b0fe770d84626cd6c200.webp',
+    description: 'An elegant one-page website template for construction, engineering, and architectural firms.',
+    tags: ['Figma', '1280px Grid', 'One Page'],
+  },
+  {
+    id: 'customwebsite',
+    title: 'Custom Website Design & Development',
+    category: 'Bespoke Service',
+    price: 800,
+    image: '/lisitings/Website Design and Development, Custom websites, Business websites, Custom Websites For Business/photo1-thumbnail.webp',
+    description: 'A tailored website designed and developed around your business, audience, content, and growth goals.',
+    tags: ['Custom', 'Strategy', 'Development'],
+  },
+];
 
 export default function ProductsPage() {
-    const products = [
-        {
-            id: 'logix',
-            title: 'Logix – Logistic Website UI Figma Template',
-            category: 'UI Kit',
-            price: 18,
-            image: '/lisitings/Logix/photo1.png',
-            description: 'A sleek and user-friendly Logistics Website UI Figma Template designed for desktop and mobile.',
-            tags: ['Figma', 'UI Kit', 'Logistics', 'Template']
-        },
-        {
-            id: 'ronel',
-            title: 'Ronel - NodeJs Landing Page Template',
-            category: 'Landing Page',
-            price: 18,
-            image: '/lisitings/Ronel - NodeJs Landing Page Template/photo1.png',
-            description: 'Ronel is a Startup Landing Page, Responsive, quick and easy customizable Modern Startup Landing Page Template that comes with NodeJs pages.',
-            tags: ['NodeJs', 'Bootstrap', 'Template', 'Startup']
-        },
-        {
-            id: 'customwebsite',
-            title: 'Custom Website Design & Development',
-            category: 'Web Design',
-            price: 800,
-            image: '/lisitings/Website Design and Development, Custom websites, Business websites, Custom Websites For Business/photo1-thumbnail.webp',
-            description: 'Professional custom website design and development tailored to your business — responsive, fast, and built to convert.',
-            tags: ['Custom', 'Web Design', 'Business', 'Responsive']
-        }
-    ];
-
-    return (
-        <div className="min-h-screen bg-slate-50">
-            {/* Hero Section */}
-            <section className="py-20 bg-primary">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-3xl mx-auto text-center text-white">
-                        <h1 className="text-5xl sm:text-6xl font-bold mb-6">Digital Products</h1>
-                        <p className="text-xl sm:text-2xl opacity-90">
-                            Premium templates and design resources
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* Products Grid */}
-            <section className="py-20">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {products.map((product) => (
-                            <Link
-                                key={product.id}
-                                href={`/products/${product.id}`}
-                                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
-                            >
-                                <div className="relative h-64 bg-slate-100">
-                                    <Image
-                                        src={product.image}
-                                        alt={product.title}
-                                        fill
-                                        className="object-cover"
-                                    />
-                                    <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        {product.category}
-                                    </div>
-                                </div>
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                                        {product.title}
-                                    </h3>
-                                    <p className="text-gray-600 mb-4 line-clamp-2">
-                                        {product.description}
-                                    </p>
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-2xl font-bold text-primary">
-                                            ${product.price}
-                                        </span>
-                                        <span className="text-sm text-gray-500">
-                                            View Details →
-                                        </span>
-                                    </div>
-                                </div>
-                            </Link>
-                        ))}
-                    </div>
-                </div>
-            </section>
+  return (
+    <div>
+      <section className="page-hero">
+        <div className="site-container grid items-end gap-8 lg:grid-cols-[1fr_auto]">
+          <div className="max-w-3xl">
+            <p className="eyebrow">Digital shop</p>
+            <h1 className="display-title">Practical products for faster digital work.</h1>
+            <p className="body-large mt-7 max-w-2xl">Templates, interface kits, and custom solutions designed to give businesses a stronger starting point.</p>
+          </div>
+          <div className="flex items-center gap-3 border border-[#d4c7bf] bg-[#fffdf9] px-4 py-3 text-xs text-[#675c59]">
+            <StripeLogo className="h-7 w-auto rounded-sm" /> Transactions processed through Stripe
+          </div>
         </div>
-    );
+      </section>
+
+      <section className="py-16 sm:py-24">
+        <div className="site-container">
+          <div className="mb-10 flex flex-col justify-between gap-3 border-b border-[#cfc4be] pb-5 sm:flex-row sm:items-end">
+            <p className="text-sm font-bold">All products</p>
+            <p className="text-xs text-[#7a6f6b]">Digital products are delivered electronically after purchase.</p>
+          </div>
+
+          <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-4">
+            {products.map((product) => (
+              <Link key={product.id} href={`/products/${product.id}`} className="group surface-card overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#e2d9d3]">
+                  <Image src={product.image} alt={product.title} fill className="object-contain p-3 transition duration-700 group-hover:scale-[1.02]" />
+                  <span className="absolute left-4 top-4 bg-highlight px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] text-white">{product.category}</span>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-start justify-between gap-4">
+                    <h2 className="text-3xl transition group-hover:text-primary">{product.title}</h2>
+                    <span className="whitespace-nowrap text-sm font-bold text-primary">{product.fixedPrice ? '' : 'From '}${product.price}</span>
+                  </div>
+                  {product.creator && <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.13em] text-primary">Built by {product.creator}</p>}
+                  <p className="mt-4 text-sm leading-7 text-[#746966]">{product.description}</p>
+                  <div className="mt-6 flex flex-wrap gap-2 border-t border-[#e5ddd8] pt-5">
+                    {product.tags.map(tag => <span key={tag} className="text-[10px] font-bold uppercase tracking-[0.13em] text-[#897a74]">{tag}</span>)}
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }

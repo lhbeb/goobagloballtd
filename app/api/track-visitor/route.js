@@ -178,9 +178,9 @@ export async function POST(request) {
         });
 
         const message = [
-            'New Visitor - Zeinab Lundin',
+            'New Visitor - Gooba Global LTD',
             '',
-            `Time: ${now} (Morocco)`,
+            `Time: ${now}`,
             `Domain: ${formatValue(domain)}`,
             `Origin: ${formatValue(origin)}`,
             `URL: ${formatValue(url)}`,

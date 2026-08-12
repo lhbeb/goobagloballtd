@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import CheckoutModal from '@/app/components/CheckoutModal';
+import StripeLogo from '@/app/components/StripeLogo';
 
 export default function ProductDetailPage({ params }) {
     const resolvedParams = use(params);
@@ -86,6 +87,46 @@ This template comes with five fully customizable pages, all optimized for easy n
                 dimensions: 'Fully Responsive'
             }
         },
+        webconstruct: {
+            id: 'webconstruct',
+            title: 'WebConstruct – Construction & Architecture Figma Template',
+            category: 'Figma Template',
+            standardPrice: 199,
+            extendedPrice: 199,
+            singlePrice: true,
+            licenseName: 'Commercial License',
+            licenseDescription: 'Use the template for one business or client website project.',
+            creator: 'GOOBA GLOBAL LTD',
+            aboutTitle: 'About WebConstruct',
+            description: `WebConstruct is an elegant, one-page Figma template designed for the modern needs of construction, engineering, and architectural firms. With a streamlined, sophisticated layout, it provides an ideal platform for presenting company portfolios, key projects, service offerings, and team profiles in an intuitive, engaging format.
+
+Built for a seamless user experience, WebConstruct combines visual appeal with functional design, allowing firms to establish a strong, professional digital presence.`,
+            images: [
+                '/lisitings/WebConstruct/371b406ee08a100ebb1e790373df1135edadca3aaf14b0fe770d84626cd6c200.webp',
+                '/lisitings/WebConstruct/f2dba0bc07df45baa428554ee3ea5d4fedd1648976554e6f9b417948204438cf.webp'
+            ],
+            pages: ['One Home Page'],
+            features: [
+                'Bootstrap Grid 1280px',
+                'Fully customizable',
+                'Pixel-perfect layout',
+                'Clean, unique and modern design',
+                '24/7 support',
+                'Unique and modern style',
+                'Organized for easy editing',
+                'And much more'
+            ],
+            credits: ['Freepik', 'Font Awesome', 'Google Fonts'],
+            colors: ['Yellow', 'Black', 'White'],
+            perfectFor: ['Construction Firms', 'Engineering Companies', 'Architectural Studios', 'Contractors'],
+            specs: {
+                created: 'Recent',
+                compatible: 'Figma',
+                fileSize: 'Digital Download',
+                fileType: 'FIG',
+                dimensions: 'Bootstrap Grid 1280px'
+            }
+        },
         customwebsite: {
             id: 'customwebsite',
             title: 'Custom Website Design & Development',
@@ -141,7 +182,7 @@ This template comes with five fully customizable pages, all optimized for easy n
     }
 
     return (
-        <div className="min-h-screen bg-slate-50">
+        <div className="min-h-screen bg-light">
             {/* Breadcrumb */}
             <div className="bg-white border-b">
                 <div className="container mx-auto px-6 py-3">
@@ -215,16 +256,21 @@ This template comes with five fully customizable pages, all optimized for easy n
 
                         {/* Right: Product Info + License Selection */}
                         <div>
-                            <span className="inline-block bg-green-50 text-primary px-3 py-1 rounded-full text-sm font-semibold mb-3">
+                            <span className="inline-block bg-secondary text-primary px-3 py-1 rounded-full text-sm font-semibold mb-3">
                                 {product.category}
                             </span>
                             <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
+                            {product.creator && (
+                                <p className="-mt-2 mb-5 text-xs font-bold uppercase tracking-[0.14em] text-primary">
+                                    Built by {product.creator}
+                                </p>
+                            )}
 
                             {/* License Selection Card */}
                             <div className="bg-white rounded-xl p-6 mb-4">
-                                <h3 className="font-bold mb-4">Select License</h3>
+                                <h3 className="font-bold mb-4">{product.singlePrice ? 'Product License' : 'Select License'}</h3>
                                 <div className="space-y-3 mb-6">
-                                    <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition ${selectedLicense === 'standard' ? 'border-primary bg-green-50' : 'border-gray-200'
+                                    <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition ${selectedLicense === 'standard' ? 'border-primary bg-secondary' : 'border-gray-200'
                                         }`}>
                                         <input
                                             type="radio"
@@ -235,25 +281,27 @@ This template comes with five fully customizable pages, all optimized for easy n
                                             className="mt-1 mr-3"
                                         />
                                         <div className="flex-1">
-                                            <div className="font-semibold">Standard License - ${product.standardPrice}</div>
-                                            <p className="text-sm text-gray-600">Use by you or one client, in a single end product which end users are not charged for.</p>
+                                            <div className="font-semibold">{product.licenseName || 'Standard License'} - ${product.standardPrice}</div>
+                                            <p className="text-sm text-gray-600">{product.licenseDescription || 'Use by you or one client, in a single end product which end users are not charged for.'}</p>
                                         </div>
                                     </label>
-                                    <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition ${selectedLicense === 'extended' ? 'border-primary bg-green-50' : 'border-gray-200'
-                                        }`}>
-                                        <input
-                                            type="radio"
-                                            name="license"
-                                            value="extended"
-                                            checked={selectedLicense === 'extended'}
-                                            onChange={(e) => setSelectedLicense(e.target.value)}
-                                            className="mt-1 mr-3"
-                                        />
-                                        <div className="flex-1">
-                                            <div className="font-semibold">Extended License - ${product.extendedPrice}</div>
-                                            <p className="text-sm text-gray-600">Use by you or one client, in a single end product which end users can be charged for.</p>
-                                        </div>
-                                    </label>
+                                    {!product.singlePrice && (
+                                        <label className={`flex items-start p-4 border-2 rounded-lg cursor-pointer transition ${selectedLicense === 'extended' ? 'border-primary bg-secondary' : 'border-gray-200'
+                                            }`}>
+                                            <input
+                                                type="radio"
+                                                name="license"
+                                                value="extended"
+                                                checked={selectedLicense === 'extended'}
+                                                onChange={(e) => setSelectedLicense(e.target.value)}
+                                                className="mt-1 mr-3"
+                                            />
+                                            <div className="flex-1">
+                                                <div className="font-semibold">Extended License - ${product.extendedPrice}</div>
+                                                <p className="text-sm text-gray-600">Use by you or one client, in a single end product which end users can be charged for.</p>
+                                            </div>
+                                        </label>
+                                    )}
                                 </div>
                                 <button
                                     onClick={() => setShowCheckout(true)}
@@ -261,15 +309,31 @@ This template comes with five fully customizable pages, all optimized for easy n
                                 >
                                     Buy Now — ${selectedLicense === 'standard' ? product.standardPrice : product.extendedPrice}
                                 </button>
+                                <p className="mt-3 flex items-center justify-center gap-2 text-center text-xs text-gray-500 leading-relaxed">
+                                    <StripeLogo className="h-7 w-auto rounded border border-gray-100" />
+                                    <span>Secure transaction processed using <strong>Stripe</strong> as our payment gateway.</span>
+                                </p>
                             </div>
 
                             {/* Product Description */}
                             <div className="bg-white rounded-xl p-6">
-                                <h3 className="font-bold mb-4">About This Template</h3>
+                                <h3 className="font-bold mb-4">{product.aboutTitle || 'About This Template'}</h3>
                                 <p className="text-gray-700 leading-relaxed whitespace-pre-line">{product.description}</p>
                                 {product.note && (
                                     <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-3 rounded">
                                         <p className="text-amber-900"><strong>*Note*</strong><br />{product.note}</p>
+                                    </div>
+                                )}
+                                {product.credits && (
+                                    <div className="mt-6 border-t border-gray-200 pt-5">
+                                        <h4 className="mb-3 text-sm font-bold">Credits</h4>
+                                        <div className="flex flex-wrap gap-2">
+                                            {product.credits.map((credit) => (
+                                                <span key={credit} className="rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-primary">
+                                                    {credit}
+                                                </span>
+                                            ))}
+                                        </div>
                                     </div>
                                 )}
                             </div>
@@ -313,7 +377,7 @@ This template comes with five fully customizable pages, all optimized for easy n
                             <h3 className="font-bold mb-4">Colors</h3>
                             <div className="flex flex-wrap gap-2">
                                 {product.colors.map((color, idx) => (
-                                    <span key={idx} className="px-3 py-1 bg-green-50 text-primary rounded-full font-semibold">
+                                    <span key={idx} className="px-3 py-1 bg-secondary text-primary rounded-full font-semibold">
                                         {color}
                                     </span>
                                 ))}

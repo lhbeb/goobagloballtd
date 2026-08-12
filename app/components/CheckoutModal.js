@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import StripeLogo from './StripeLogo';
 
 function StepIndicator({ step }) {
     return (
@@ -130,7 +131,7 @@ export default function CheckoutModal({ product, license, price, onClose }) {
                             <p className="text-gray-500 mb-6 text-sm">We&apos;ll send your download link to your email.</p>
 
                             {/* Order Summary */}
-                            <div className="bg-slate-50 rounded-2xl p-4 mb-6 border border-slate-200">
+                            <div className="bg-light rounded-2xl p-4 mb-6 border border-secondary-dark">
                                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Order Summary</p>
                                 <div className="flex justify-between items-start mb-2">
                                     <div>
@@ -183,14 +184,15 @@ export default function CheckoutModal({ product, license, price, onClose }) {
                         <>
                             <StepIndicator step={step} />
                             <h2 className="text-2xl font-bold mb-1">Payment Details</h2>
-                            <p className="text-gray-500 mb-6 text-sm">Your payment is secured with 256-bit SSL encryption.</p>
+                            <div className="mb-6 flex items-center gap-2 text-sm text-gray-500">
+                                <StripeLogo className="h-8 w-auto rounded border border-gray-100" />
+                                <p>Stripe is the payment gateway for this digital-product transaction.</p>
+                            </div>
 
                             {/* SSL badge */}
-                            <div className="flex items-center gap-2 mb-6 bg-green-50 border border-green-200 rounded-xl px-4 py-2.5">
-                                <svg className="w-5 h-5 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                                <span className="text-primary-dark text-sm font-medium">Secure & Encrypted Payment</span>
+                            <div className="flex items-center gap-2 mb-6 bg-secondary border border-secondary-dark rounded-xl px-4 py-2.5">
+                                <StripeLogo className="h-8 w-auto rounded" />
+                                <span className="text-primary-dark text-sm font-medium">Payment processed through Stripe</span>
                             </div>
 
                             {/* Card visual */}
@@ -290,7 +292,10 @@ export default function CheckoutModal({ product, license, price, onClose }) {
                                                 Processing…
                                             </>
                                         ) : (
-                                            `Pay $${price}.00`
+                                            <>
+                                                <StripeLogo className="h-7 w-auto rounded" />
+                                                Pay ${price}.00 with Stripe
+                                            </>
                                         )}
                                     </button>
                                 </div>
@@ -302,7 +307,7 @@ export default function CheckoutModal({ product, license, price, onClose }) {
                     {step === 3 && (
                         <div className="text-center py-4">
                             {/* Animated checkmark */}
-                            <div className="w-24 h-24 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
+                            <div className="w-24 h-24 rounded-full bg-secondary-dark flex items-center justify-center mx-auto mb-6">
                                 <svg className="w-12 h-12 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
                                 </svg>
@@ -312,7 +317,7 @@ export default function CheckoutModal({ product, license, price, onClose }) {
                             <p className="text-gray-500 mb-8">Thank you for your purchase, <span className="font-semibold text-gray-700">{info.name}</span>.</p>
 
                             {/* Receipt card */}
-                            <div className="bg-slate-50 rounded-2xl p-5 text-left border border-slate-200 mb-6">
+                            <div className="bg-light rounded-2xl p-5 text-left border border-secondary-dark mb-6">
                                 <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4">Order Receipt</p>
                                 <div className="space-y-2.5 text-sm">
                                     <div className="flex justify-between">
@@ -338,7 +343,7 @@ export default function CheckoutModal({ product, license, price, onClose }) {
                                 </div>
                             </div>
 
-                            <div className="bg-green-50 border border-green-200 rounded-xl p-4 mb-6 text-sm text-primary-dark">
+                            <div className="bg-secondary border border-secondary-dark rounded-xl p-4 mb-6 text-sm text-primary-dark">
                                 <p>📧 A download link has been sent to <strong>{info.email}</strong>. Please check your inbox (and spam folder).</p>
                             </div>
 

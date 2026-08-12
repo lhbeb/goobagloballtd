@@ -1,120 +1,66 @@
 import Link from 'next/link';
 
 export const metadata = {
-    title: "Web Design Services - Zeinab Lundin",
-    description: "Transparent web design packages with no hidden fees. Built for businesses that want results.",
+  title: 'Website Services',
+  description: 'Transparent website design and development packages from Gooba Global LTD.',
 };
 
+const services = [
+  {
+    title: 'Launch Website',
+    price: '$650',
+    timing: '2–3 weeks',
+    description: 'For founders and small businesses that need a clear, credible website without unnecessary complexity.',
+    features: ['Up to 5 core pages', 'Custom responsive design', 'Search-ready structure', 'Contact form setup', 'Two revision rounds', '30 days of launch support'],
+  },
+  {
+    title: 'Growth Website',
+    price: '$1,250',
+    timing: '4–6 weeks',
+    description: 'For established businesses that need more content, stronger conversion paths, and room to evolve.',
+    features: ['Up to 10 strategic pages', 'Content management system', 'Commerce or booking support', 'Polished motion and interactions', 'Performance refinement', '60 days of launch support'],
+  },
+];
+
 export default function ListingsPage() {
-    const services = [
-        {
-            id: 1,
-            title: "Professional Web Design",
-            price: "800",
-            deliveryTime: "2-3 weeks",
-            description: "Perfect for startups and small businesses ready to make their mark online",
-            features: [
-                "Custom responsive design",
-                "Up to 5 pages",
-                "SEO optimization",
-                "Mobile-friendly layout",
-                "Contact form integration",
-                "2 rounds of revisions",
-                "30-day support",
-                "Social media integration"
-            ],
-            popular: true
-        },
-        {
-            id: 2,
-            title: "Premium Web Design",
-            price: "1,500",
-            deliveryTime: "4-6 weeks",
-            description: "For established businesses that need a full-featured, high-performance web presence",
-            features: [
-                "Everything in Professional",
-                "Up to 10 pages",
-                "Advanced animations & interactions",
-                "E-commerce integration",
-                "CMS implementation",
-                "Performance optimization",
-                "Advanced SEO strategy",
-                "60-day support",
-                "Free hosting setup",
-                "Analytics integration"
-            ],
-            popular: false
-        }
-    ];
-
-    return (
-        <div className="min-h-screen">
-            {/* Hero */}
-            <section className="py-16 bg-primary text-white">
-                <div className="container mx-auto px-6 text-center">
-                    <h1 className="text-5xl font-bold mb-3">Our Services</h1>
-                    <p className="text-xl opacity-90">Straightforward packages, transparent pricing — no surprises</p>
-                </div>
-            </section>
-
-            {/* Pricing Cards */}
-            <section className="py-16 bg-slate-50">
-                <div className="container mx-auto px-6 max-w-5xl">
-                    <div className="grid md:grid-cols-2 gap-6">
-                        {services.map((service) => (
-                            <div
-                                key={service.id}
-                                className={`bg-white rounded-2xl p-8 ${service.popular ? 'ring-2 ring-primary shadow-xl' : 'shadow-md'
-                                    }`}
-                            >
-                                {service.popular && (
-                                    <div className="inline-block bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                                        ⭐ Most Popular
-                                    </div>
-                                )}
-
-                                <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
-                                <p className="text-gray-600 mb-4">{service.description}</p>
-
-                                <div className="mb-4">
-                                    <span className="text-5xl font-bold text-primary">${service.price}</span>
-                                </div>
-
-                                <div className="flex items-center gap-2 text-gray-600 mb-6 p-3 bg-green-50 rounded-lg">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    <span>Delivery: {service.deliveryTime}</span>
-                                </div>
-
-                                <div className="mb-6">
-                                    <p className="font-semibold mb-3">What&apos;s Included:</p>
-                                    <ul className="space-y-2">
-                                        {service.features.map((feature, idx) => (
-                                            <li key={idx} className="flex items-start gap-2">
-                                                <svg className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                                                </svg>
-                                                <span className="text-gray-700 text-sm">{feature}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-
-                                <Link
-                                    href="/contact"
-                                    className={`block w-full py-3 rounded-lg font-semibold text-center transition ${service.popular
-                                        ? 'bg-primary text-white hover:bg-primary-dark'
-                                        : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                                        }`}
-                                >
-                                    Get Started
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+  return (
+    <div>
+      <section className="page-hero">
+        <div className="site-container max-w-4xl">
+          <p className="eyebrow">Website services</p>
+          <h1 className="display-title">Clear scope. Transparent starting rates.</h1>
+          <p className="body-large mt-7 max-w-2xl">Choose the closest fit. Every project begins with a short consultation so we can confirm goals, content, and the right path forward.</p>
         </div>
-    );
+      </section>
+
+      <section className="py-16 sm:py-24">
+        <div className="site-container">
+          <div className="grid gap-7 lg:grid-cols-2">
+            {services.map((service, index) => (
+              <article key={service.title} className="surface-card flex flex-col p-7 sm:p-9">
+                <div className="flex items-center justify-between border-b border-[#ded5cf] pb-5">
+                  <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#a08152]">Package 0{index + 1}</span>
+                  <span className="text-xs font-bold text-[#6e625f]">{service.timing}</span>
+                </div>
+                <div className="py-8">
+                  <h2 className="text-5xl">{service.title}</h2>
+                  <p className="mt-3 text-2xl font-bold text-primary">{service.price} <span className="text-xs font-medium uppercase tracking-wider text-[#8c7e78]">starting rate</span></p>
+                  <p className="mt-6 text-sm leading-7 text-[#746966]">{service.description}</p>
+                </div>
+                <ul className="grid gap-3 border-t border-[#ded5cf] py-7 text-sm text-[#4f4543] sm:grid-cols-2">
+                  {service.features.map(feature => <li key={feature} className="flex gap-2"><span className="text-primary">✓</span>{feature}</li>)}
+                </ul>
+                <Link href="/contact" className="btn-primary mt-auto w-full">Discuss this package <span>↗</span></Link>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-6 border border-[#d7cdc7] bg-[#efe8df] p-7 sm:grid-cols-[1fr_auto] sm:items-center sm:p-9">
+            <div><h2 className="text-3xl">Need something outside these packages?</h2><p className="mt-2 text-sm leading-6 text-[#746966]">Tell us what you need and we will propose a custom scope with clear deliverables and pricing.</p></div>
+            <Link href="/contact" className="btn-secondary">Request a custom scope</Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
